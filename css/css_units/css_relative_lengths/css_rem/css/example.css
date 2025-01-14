@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+p {
+    font-size: 2.53rem;
+}
+
+.box {
+    width: 22rem;
+    height: 18rem;
+    background-color: blue;
+}

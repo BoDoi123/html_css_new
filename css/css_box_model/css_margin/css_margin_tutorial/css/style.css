@@ -1,0 +1,21 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    padding: 10px 20px 30px 40px;
+
+    border: 10px solid blue;
+
+    /* Set đều 4 cạnh */
+    margin: 10px;
+
+    /* Set theo từng đối số (Giống padding) */
+    margin: 10px 20px 30px 40px;
+
+    /* Set theo từng cạnh */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 25px;
+}

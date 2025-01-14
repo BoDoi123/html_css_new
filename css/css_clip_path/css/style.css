@@ -1,0 +1,51 @@
+.box {
+    width: 200px;
+    height: 200px;
+
+    background: url(../image/ava.png) center / contain no-repeat border-box border-box;
+
+    margin: 0px auto;
+
+    /* 1. Cắt thành hình tròn */
+    /* Mặc định tâm đường tròn trùng tâm bức ảnh */
+    clip-path: circle();
+
+    /* Thay đổi bán kính */
+    clip-path: circle(80px);
+
+    /* Thay đổi bán kính dùng % */
+    clip-path: circle(40%);
+
+    /* Dịch tâm theo x y */
+    /* Mặc định là x = 50% và y = 50 */
+    clip-path: circle(80px at 50 50);
+
+    clip-path: circle(80px at 40% 70%);
+
+    /* 2. Cắt thành hình chữ nhật */
+    /* Cắt đều 4 cạnh */
+    clip-path: inset(20px);
+
+    /* Cắt theo từng cạnh */
+    clip-path: inset(20px 50px);
+
+    clip-path: inset(20px 50px 80px);
+
+    clip-path: inset(20px 50px 80px 30px);
+
+    /* Bo góc cho hình chữ nhật */
+    clip-path: inset(20px round 15px);
+
+    clip-path: inset(20px round 15px 50px);
+
+    clip-path: inset(20px round 15px 50px 80px);
+
+    clip-path: inset(20px round 15px 50px 80px 15px);
+
+    /* 3. Cắt thành hình đa giác */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+
+    /* Có thể thêm thuộc tính border-radius cho hình */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+    border-radius: 15px;
+}

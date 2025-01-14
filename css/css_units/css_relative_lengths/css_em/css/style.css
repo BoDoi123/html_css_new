@@ -1,0 +1,39 @@
+/* 
+1. Thẻ cha và thẻ con không có font-size
+   
+    => Lấy theo font-size root (HTML) thường là 16px
+*/
+.child {
+    width: 10em;
+    height: 10em;
+    background-color: violet;
+}
+
+/*  
+2. Thẻ cha có font-size tuyệt đối
+
+    => Lấy theo font-size của cha (kế thừa)
+*/
+.parent {
+    font-size: 30px;
+}
+
+/*  
+3. Cả thẻ cha và thẻ con đều có font-size
+
+    => Ưu tiên lấy font-size của chính nó
+*/
+.child {
+    /* font-size: 10px; */
+}
+
+/*  
+4. Thẻ cha có font-size tương đối
+
+    => Thẻ cha sẽ lấy kích thước mặc định từ trình duyệt (thẻ html gốc 16px)
+
+    => Thẻ con tiếp tục kế thừa từ thẻ cha
+*/
+.parent {
+    font-size: 2em;
+}

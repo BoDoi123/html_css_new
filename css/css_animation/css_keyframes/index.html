@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css">
+        <title>CSS Animation - Tutorial</title>
+    </head>
+    <body>
+        <!--  
+            1. Animation
+
+                - Animation: Tạo ra các hoạt cảnh mà không cần tác động vào phần tử
+
+                - Transform: Tạo ra các chuyển đổng khi tương tác với phần tử: hover, active,....
+
+                    => CSS Keyframes: Là cách tạo các bước cụ thể của animation, từ điểm xuất phát đến điểm kết thúc. 
+
+                        VD: Step 1: Định nghĩa điểm xuất phát và kết thúc
+
+                            @keyframes spin_element {
+                                from {
+                                    rotate: 0;
+                                }    
+
+                                to {
+                                    rotate: 360deg;
+                                }
+                            }
+
+                            Step 2: Gọi animation áp dụng cho element
+
+                            .box {
+                                animation: spin_element 1s;
+                            }
+
+                *) Short hand: 
+                            
+                    animation: name duration timing-function delay iteration-count direction fill-mode;
+                
+                *) Các thuộc tính animation
+
+                    - animation-name (bắt buộc)                                            => Tên của @keyframes  
+
+                    - animation-duration (bắt buộc)                                        => Thời gian mà animation sẽ diễn ra: giây(s) hoặc mili giây(ms)
+
+                    - animation-timing-function (tùy chọn, mặc định là ease)               => Xác định các animation chuyển động qua thời gian
+
+                                                                                                VD: linear, ease-in, ease-out, ease-in-out, và nhiều hàm chuyển động khác
+                
+                    - anination-delay (tùy chọn, mặc định là 0s)                           => Thời gian trì hoãn trước khi animation bắt đầu, s / ms
+                    
+                    - animation-iteration-count                                            => Số lần lăp của animation
+
+                        +) tùy chọn, mặc định giá trị là 1
+
+                        +) có thể là số nguyên: 2, 5, 7, 9, ....
+
+                        +) infinite để lặp vô hạn lần
+                            
+                    - animation-direction                                                   => Xác định hướng của animation
+
+                        +) tùy chọn, mặc định là: normal; animation sẽ chuyển động theo thứ tự bình thường, từ keyframes xuất phát -> keyframes kết thúc
+
+                        +) reverse: animation sẽ chuyển động ngược lại từ keyframes kết thúc -> keyframes xuất phát
+
+                        +) alternate: animation sẽ lặp lại theo hướng normal, sau đó lặp lại theo hướng reverse, và tiếp tục lặp lại theo cách đó
+
+                        +) alternate-reverse: animation sẽ lặp lại theo hướng reverse, sau đó lặp lại theo hướng normal, và sẽ tiếp tục lặp lại theo cach đó
+
+                    - animation-fill-mode                                                   => Xác định vị trí của phần tử sau khi kết thúc animation
+
+                        +) tùy chọn, mặc định là: none -> Không có bất kỳ thay đổi gì
+
+                        +) forwards: phần tử sẽ giữ giá trị của keyframes cuối cùng sau khi animation kết thúc
+
+                        +) backwards: ngay tại thời điểm bắt đầu, animation sẽ ở vị trí keyframes đầu tiên
+
+                        +) both: animation áp dụng cả forwards và backwards 
+
+                            => Tức là animation sẽ bắt đầu tại keyframes đầu tiên và dừng lại ở keyframes cuối cùng
+
+            2. Animation với nhiều bước keyframes
+
+                VD: 
+                    @keyframes move_box3 {
+                        0% {
+                            transform: translate(0, 0);
+                        }
+
+                        25% {
+                            transform: translate(-100px, 0);
+                        }
+
+                        50% {
+                            transform: translate(-100px, -100px);
+                        }
+
+                        75% {
+                            transform: translate(0, -100px);
+                        }
+
+                        100% {
+                            transform: translate(0, 0);
+                        }
+                    }
+
+                    .box3 {
+                        animation: move_box3 3s linear;
+                    }
+        -->
+
+        <div class="box">Tuhoc.cc</div>
+        <div class="box2">Tuhoc.cc</div>
+        <div class="box3">Tuhoc.cc</div>
+    </body>
+</html>

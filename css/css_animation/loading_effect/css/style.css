@@ -1,0 +1,51 @@
+.container {
+    height: 100vh;
+    
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    --size: 200px;
+    --first-color: blue;
+    --second-color: yellow;
+
+    position: relative;
+
+    color: #fff;
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner::after {
+    content: "";
+
+    position: absolute;
+
+    width: var(--size);
+    height: var(--size);
+
+    border: 20px solid var(--first-color);
+    border-top: 20px solid var(--second-color);
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px var(--first-color);
+
+    animation: spin 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

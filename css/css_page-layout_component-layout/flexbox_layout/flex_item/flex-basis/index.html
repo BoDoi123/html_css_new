@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Flexbox layout - FlexItem - FlexBasis</title>
+    </head>
+    <body>
+        <!--  
+            B. Flexbox: Flex-Item
+
+                4. Thuộc tính flex-basis                            => Set main size item (lưu ý main size theo trục main axis) chính là hướng của trục main
+
+                    - Ở các bài trước, trục của main axis và cross axis có thể bị xoay, nếu dùng thuộc tính flex-direction: column
+
+                        VD: Khi trục main axis mặc định nằm ngang
+
+                            => Kích thước phần tử: Flex-basis tương ứng với width (Chiều rộng của item = 30% box cha)
+
+                            *) Tuy nhiên khi ta xoay trục main dùng thuộc tính flex-direction: column
+
+                                => Flex-basis chính là chiều cao của phần tử do trục main đã nằm dọc
+        -->
+
+        <div class="container">
+            <div class="box box1">Block 1</div>
+            <div class="box box2">Block 2</div>
+            <div class="box box3">Block 3</div>
+        </div>
+    </body>
+</html>

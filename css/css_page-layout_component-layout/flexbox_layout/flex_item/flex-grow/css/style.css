@@ -1,0 +1,24 @@
+.container {
+    height: 150px;
+
+    display: flex;
+
+    background-color: cyan;
+}
+
+.box {
+    background-color: blue;
+
+    border: 1px solid black;
+}
+
+/* Tỉ lệ chiếm của khối box trong khối cha container */
+/* Default value = 0 => Khối rộng = nội dung của khối đó */
+.box1,
+.box3 {
+    flex-grow: 1;
+}
+
+.box2 {
+    flex-grow: 2;
+}

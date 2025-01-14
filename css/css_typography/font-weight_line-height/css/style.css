@@ -1,0 +1,17 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-weight: 400;
+
+    font-size: 16px;
+    line-height: 1.5;
+    line-height: 150%;
+}
+
+h1 {
+    height: 120px;
+    background-color: blue;
+    line-height: 120px;
+}

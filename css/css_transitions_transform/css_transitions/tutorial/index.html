@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Transitions - Tutorial</title>
+    </head>
+    <body>
+        <!--  
+            1. CSS - Transitions
+
+                - Transitions trong CSS cho phép bạn kiểm soát thời gian chuyển tiếp của 1 phần tử từ trạng thái này sang trạng thái khác với hiệu ứng một cách mượt mà
+
+                *) Các thuộc tính cơ bản:
+
+                    a. transition: transition-property
+
+                        => Xác định thuộc tính CSS áp dụng transition (để all hoặc không nhập sẽ hiểu là áp dụng cho tất cả)
+
+                            VD: transition: width hoặc height hoặc opacity
+
+                    b. transition: transition-duration (Thuộc tính bắt buộc có)
+
+                        => Transition từ trạng thái A -> B: mất tổng .... giây
+
+                            VD: transition: 1s hoặc 500ms (mili giây)
+                    
+                    c. transition: transition-timing-function
+
+                        => Xác định cách thay đổi xảy ra theo thời gian
+
+                            VD: transition: ease hoặc linear hoặc ease-in hoặc ease-out hoặc ease-in-out
+
+                            (Giá trị mặc định là ease và ta có thể điểu chỉnh tùy ý)
+
+                            link tự học: https://game.tuhoc.cc/8
+
+                    d. transition: transition-delay
+
+                        => Xác định thời gian trễ trước khi Transition bắt đầu
+
+                            VD: transition: 0.5s
+
+                *) Transition-shorthand:
+
+                    - Lưu ý: transition-duration luôn phải viết trước transition-delay
+
+                        VD: transition: all ease-in 1s 3s
+
+                            => duration = 1s và delay = 3s
+
+                *) 1 số lưu ý quan trọng
+
+                    - Không phải thuộc tính nào cũng hỗ trợ transition, animation
+
+                        VD: display, ...
+
+                    - Không nên tác động transition vào phần hover, active, .....
+        -->
+
+        <button class="btn">Hover me, please</button>
+    </body>
+</html>

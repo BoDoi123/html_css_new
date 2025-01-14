@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(240, 174, 226);
+    border-radius: 999px;
+    color: black;
+
+    width: 100px;
+    padding: 8px 16px;
+    text-align: center;
+
+    display: inline-block;
+}
+
+a:hover {
+    background-color: black;
+    color: rgb(240, 174, 226);
+}

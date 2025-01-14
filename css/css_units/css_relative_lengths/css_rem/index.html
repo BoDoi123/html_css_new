@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Units Relative Lengths - Rem</title>
+    </head>
+    <body>
+        <!--  
+            Rem: Kích thước phụ thuộc vào font-size thẻ html (root element) mặc định là 16px
+
+                VD: 3rem    => Kich thước gấp 3 lần font chữ root element (không kế thừa)
+
+            Sử dụng rem trong trường hợp muốn thiết kế 1 khối cố định các kích thước, co giãn theo tỷ lệ
+
+
+            => Bài toán quy đổi pixel sang rem đơn giản
+
+                - Thông thường 1 rem = 16px
+
+                - Cần quy đổi tính tỉ lệ để 1 rem = 10px
+                    
+                    -> 10/16 * 100 = 62.5%
+                    -> Cần giảm font-size của HTML xuống 62.5%
+        -->
+
+        <div class="parent">
+            <div class="child">
+                em
+                <div class="child">
+                    em
+                    <div class="child">em</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

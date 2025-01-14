@@ -1,0 +1,64 @@
+/* <*> chọn tất cả các selector */
+* {
+    color: red;
+}
+
+/* chọn tất cả class demo của selector h2 */
+h2.demo {
+    color: blue;
+}
+
+/* chọn tất cả các thẻ h1, h2 và có class là demo, id là title*/
+.demo,
+h1,
+h2 #title {
+    color: yellow;
+}
+
+/* Chọn tất cả các thẻ có đồng thời 2 class là demo và demo2 */
+.demo.demo2 {
+    color: green;
+}
+
+/* Chọn tất cả các thẻ p nằm trong thẻ div*/
+div p {
+    color: blue;
+}
+
+.loichuc p {
+    font-size: 30px;
+}
+
+/* Chọn tất cả các thẻ p là con trực tiếp của thẻ div*/
+div > p {
+    color: green;
+}
+
+block > p {
+    color: red;
+}
+
+/* Chọn thẻ đứng sát ngay sau thẻ đầu tiên */
+h1 + h2 {
+    color: violet;
+    font-size: 30px;
+}
+
+/* Trường hợp h3 không đứng sát ngay sau h1 nên nó không nhận css */
+h1 + h3 {
+    color: black;
+}
+
+.demo3.demo4 + h3 {
+    color: blue;
+    font-size: 30px;
+}
+
+/* Chọn tất cả các thẻ đằng sau thẻ được chọn đầu tiên*/
+h1 ~ h3 {
+    color: black;
+}
+
+div ~ div p {
+    color: red;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Flexbox layout - FlexItem - Flex</title>
+    </head>
+    <body>
+        <!-- 
+            B. Flexbox: Flex-Item 
+
+                5. Thuộc tính flex: flex-grow flex-shrink flex-basis
+
+                    => Đây là cách viết tắt sử dụng đồng thời 3 thuộc tính
+
+                        a) flex-grow:           => Chia tỉ lệ giãn chiếm theo trọng số (Default value = 0)
+
+                        b) flex-shrink:         => Xác định khả năng co lại của item để thích nghi với không gian hạn chế (Default value = 1)
+
+                        c) flex-basis:          => Set main size item - Theo trục main axis(
+
+                    *) Độ ưu tiên của set width (Thứ tự tăng dần)
+
+                        1. content width    2. width    3. flex-basis   4. min-width / max-width 
+
+                        => max-width = Độ rộng tối đa của nội dung để nội dung nằm trên cùng 1 hàng
+
+                        => min-width = Độ rộng của từ dài nhất của nội dung
+
+                        +) Lưu ý: Nếu dùng đồng thời 2 thuộc tính flex-basis và max-width
+
+                            - Nếu max-width > flex-basis            => Dùng max-width
+
+                            - Nếu max-width < flex-basis            => Dùng flex-basis
+        -->
+
+        <div class="container">
+            <div class="box box1">Block 1</div>
+            <div class="box box2">Block 2</div>
+            <div class="box box3">Block 3</div>
+            <div class="box box4">Loremipsum dolor sit.</div>
+        </div>
+    </body>
+</html>

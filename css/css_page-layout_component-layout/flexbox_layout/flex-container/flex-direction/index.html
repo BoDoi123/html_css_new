@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS FlexLayout - FlexContainer - FlexDirection</title>
+    </head>
+    <body>
+        <!--  
+            A. Flexbox: Flex-Container
+
+                5. Thuộc tính flex-direction                            
+
+                    *) Giá trị thuộc tính
+
+                        a) flex-direction: row | row-reverse                => Dùng để xoay hướng trục main axis còn trục cross axis thì không đổi
+
+                            - flex-direction: row                           => Default value. Trục main axis nằm ngang có điểm main start (bên trái container) -> main end (bên phải container)
+
+                            - flex-direction: row-reverse                   => Đổi hướng của trục main axis (từ phải qua trái)     => main start (bên phải) -> main end (bên trái)
+                            
+                        b) flex-direction: column | column-reverse          =>  main axis theo chiều dọc - cột (column) + cross axis bị đẩy sang theo chiều ngang                                        
+
+                            - flex-direction: column                        => Đổi 2 trục main axis thành trục dọc (column) và cross axis thành trục ngang (Nhưng vẫn giữ đúng chiều của start và end)
+
+                            - flex-direction: column-reverse                => Đổi 2 trục như trên nhưng thay đổi chiều của dọc (main axis) còn trục ngang không đổi 
+
+                                                                                => trục dọc: dưới lên trên (main start -> main end)
+        -->
+
+        <div class="container">
+            <div class="box box1">Block 1</div>
+            <div class="box box2">Block 2</div>
+            <div class="box box3">Block 3</div>
+            <div class="box box4">Block 4</div>
+        </div>
+    </body>
+</html>

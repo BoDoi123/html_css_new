@@ -1,0 +1,50 @@
+.box {
+    width: 400px;
+    height: 200px;
+
+    border: 5px dashed blue;
+
+    background-image: url("https://st.quantrimang.com/photos/image/2021/04/06/cap-ve-cho-cung-1.jpg");
+
+    /* Điểm bắt đầu là góc trên bên phải */
+    background-position: top right;
+
+    /* Điểm bắt đầu là góc trên bên trái */
+    background-position: top left;
+
+    /* Điểm bắt đầu là cạnh dưới bên trái */
+    background-position: bottom left;
+
+    /* Điểm bắt đầu là cạnh dưới bên phải */
+    background-position: bottom right;
+
+    /* Điểm bắt đầu là chính giữa cạnh trên */
+    background-position: top;
+
+    /* Điểm bắt đầu là chính giữa cạnh dưới */
+    background-position: bottom;
+
+    /* Điểm bắt đầu là chính giữa cạnh trái */
+    background-position: left;
+
+    /* Điểm bắt đầu là chính giữa cạnh phải */
+    background-position: right;
+
+    /* Điểm bắt đầu là điểm chính giữa bức ảnh */
+    background-position: center;
+
+    /* Sử dụng giá trị tương đối */
+    background-position: 0% 0%;
+
+    background-position: -10% 0%;
+    background-repeat: no-repeat;
+
+    /* Sử dụng giá trị tuyệt đối */
+    background-position: 10px 10px;
+}
+
+img {
+    width: 60%;
+
+    margin-top: 50px;
+}

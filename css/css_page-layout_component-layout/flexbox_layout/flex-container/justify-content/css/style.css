@@ -1,0 +1,33 @@
+* {
+    font-size: 1.5rem;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+
+    background-color: aqua;
+
+    /* Mặc định là flex-start (nằm bên trái container) */
+    justify-content: flex-start;
+
+    justify-content: flex-end;
+
+    justify-content: center;
+
+    /* Khoảng cách giữa các item là bằng nhau và sát lề */
+    justify-content: space-between;
+
+    /* Khoảng trắng giữa các phần tử là bằng nhau tính cả lề */
+    justify-content: space-around;
+
+    /* Khoảng cách giữa các item là bằng nhau cách cả lề */
+    justify-content: space-evenly;
+}
+
+.box {
+    background-color: blue;
+}

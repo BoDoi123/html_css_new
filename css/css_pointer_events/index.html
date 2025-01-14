@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Pointer Events</title>
+    </head>
+    <body>
+        <!--  
+            1. Pointer-events trong CSS được sử dụng để kiểm soát hoạt động của chuột trên các phần tử HTML
+
+                *) Giá trị mặc định của pointer-events: auto            => Có thể tương tác được với ảnh
+
+                VD: pointer-events: none        => Nếu ta có bức ảnh thì sẽ không thể tương tác để lây link bức ảnh
+
+                                                => Nếu là 1 thẻ a (link) thì sẽ không thể click tương tác được
+        -->
+
+        <div class="box"><img src="./images/demo.jpg" alt="computer" class="anh_demo" /></div>
+
+        <a href="http://tuhoc.cc" class="btn_home">Tuhoc.cc</a>
+    </body>
+</html>

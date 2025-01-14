@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS ClipPath</title>
+    </head>
+    <body>
+        <!--  
+            14. Thuộc tính clip-path            
+
+                => Tạo 1 vùng cắt, nội dung trong vùng cắt sẽ được hiển thị
+
+                => Nội dungg ngoài vùng cắt sẽ bị ẩn
+
+                *) Các giá trị thuộc tính:
+
+                    a) circle()          => Cắt hình tròn
+
+                        - Chú ý: Cách tính bán kính đường tròn trường hợp đối số truyền vào là %
+
+                            => radius = x (đối số truyền vào) * max(width, height)
+
+                        - Cách dịch tâm đường tròn theo x y   (Gốc của x y là top left)
+
+                            Mặc định thì x = 50% và y = 50%
+
+                            VD: clip-path: circle(40% at 50% 40%)       => circle(bán kính at x y)
+
+                    b) inset()           => Cắt hình chữ nhật
+
+                        - Cắt đều 4 cạnh
+
+                            VD: clip-path: inset(20px)
+
+                        - Cắt theo từng cạnh
+
+                            VD: 2 đối số        => clip-path: (trên - dưới) (trái - phải)
+
+                                3 đối số        => clip-path: trên (trái - phải) dưới
+
+                                4 đối số        => clip-path: trên phải dưới trái
+
+                        - Thêm bo góc khai báo bằng keyword round
+
+                            VD: clip-path: inset(20px round 15px)       => bo đều 4 góc 15px
+
+                                TH: 2 đối số:           => (trên trái - dưới phải) (trên phải - dưới trái)
+
+                                    3 đối số:           => trên trái (trên phải - dưới trái) dưới phải
+
+                                    4 đối số:           => trên trái - trên phải - dưới phải - dưới trái 
+
+                    c) polygon()         => Cắt hình đa giác
+
+                        *) Cú pháp chung        => cặp x y là cặp tọa dộ các góc theo x y
+
+                            VD: clip-path: polygon(x y, x y, x y, x y)          => (điểm 1, điểm 2, điểm 3, điểm 4) tạo thành 1 đa giác
+
+                *) Gốc ảnh luôn nằm ở góc trên bên trái (top left)
+        -->
+
+        <div class="box"></div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+.box {
+    background-color: blue;
+
+    width: 30%;
+
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+
+    background-color: cyan;
+
+    flex-wrap: wrap;
+
+    flex-direction: row-reverse;
+
+    /* Cú pháp viết tắt */
+    /* flex-flow: flex-wrap flex-direction; */
+    flex-flow: wrap row-reverse;
+}

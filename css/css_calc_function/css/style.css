@@ -1,0 +1,22 @@
+.nav {
+    height: 100px;
+    background-color: #ccc;
+
+    width: calc(100% - 100px);
+
+    /* Rộng 200px */
+    width: calc(100px * 2);
+
+    /* Rộng 50px */
+    /* Số hạng đơn vị phải viết trước */
+    width: calc(100px / 2);
+
+    margin: 0px auto;
+}
+
+.main_content {
+    background-color: yellow;
+
+    /* Không sử dụng % trong tình huống này */
+    height: calc(100vh - 100px);
+}

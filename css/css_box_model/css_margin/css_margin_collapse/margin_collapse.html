@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/margin_collapse.css" />
+        <title>CSS Margin Collapse</title>
+    </head>
+    <body>
+        <!--  
+            TH2: Margin Collapse xảy ra với phần tử có quan hệ cha con
+
+                -> Khi xét margin cùng chiều cho thẻ cha và thẻ con thì sẽ bị collapse (kết hợp). Kích thước nào lớn hơn thì quyết định
+        -->
+
+        <h1>Tuhoc.cc</h1>
+        <div class="box_parent">
+            <h2 class="box_child">Thẻ h2</h2>
+        </div>
+    </body>
+</html>

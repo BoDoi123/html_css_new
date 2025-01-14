@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Variables</title>
+    </head>
+    <body>
+        <!--  
+            1. CSS Variables:
+
+                - Khi 1 giá trị CSS dùng đi dùng lại nhiều lần, ta có thể gán biến cho nó để tái sử dụng
+
+                *) Cách để khai báo và sử dụng variables:
+
+                    B1: Khai báo root hoặc html sẽ áp dụng cho toàn trang
+
+                        - Tên biến được khai báo như sau: 
+                            
+                            VD: --tên_biến
+
+                        - Khi gọi lại tên biến dùng hàm var() như sau:  
+
+                            VD: var(tên_biến)
+
+                        VD: :root {
+                                --box-height: 100px;
+                                --box-color: green;
+                            }
+
+                            .box1 {
+                                height: var(--box-height);
+                                background: var(--box-color);
+                                margin-bottom: 10px;
+                            }
+
+                *) Lưu ý:
+
+                    - Khai báo cho phần tử nào thì sẽ áp dụng được cho phần tử đó và các cấp thấp hơn (con của nó)
+
+                    - Có thể bị ghi đè theo thứ tự ưu tiên
+
+                    - Giá trị backup của biến
+
+                        VD: .content {
+                                --background-box: red;
+                            }
+
+                            .box4 {
+                                height: 100px;
+                                background-color: var(--background-box, purple);
+                            }
+
+        -->
+
+        <div class="content">
+            <div class="box1">Box 1</div>
+            <div class="box2">Box 2</div>
+            <div class="box3">Box 3</div>
+
+            <p class="detail">Chào mừng đến <span>Tuhoc.cc</span> cộng đồng tự học Việt Nam</p>
+
+            <div class="box4">Box 4</div>
+        </div>
+    </body>
+</html>

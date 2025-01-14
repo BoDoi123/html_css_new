@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Margin Collapse</title>
+    </head>
+    <body>
+        <!--  
+            1. Margin collapse: Là hiện tượng chồng lặp thuộc tính margin khi 2 phần tử liền kề cùng thiết lập margin với phần tử còn lại theo chiều dọc
+
+            *) Chú ý:
+                Margin Collapse: chỉ xảy ra theo chiều dọc còn chiều ngang thì các phần tử liền kề không bị hiện tượng này
+
+            
+            2. Cách khắc phục hiện tượng Margin Collapse:
+                
+                - Cách đơn giản: Chỉ dàn trang theo 1 chiều nhất quán, từ trên xuống dưới, hoặc từ dưới lên trên
+
+                - Trong TH bắt buộc dùng thì có thể dùng cách sau để xử lý Margin Collapse:
+
+                    => Thêm thuộc tính display: flex; vào thẻ cha 
+        -->
+
+        <!-- <h2>Xét theo chiều dọc</h2> -->
+        <div class="box box1">Tuhoc 1</div>
+        <div class="box box2">Tuhoc 2</div>
+
+        <!-- <h2>Xét theo chiều ngang</h2>
+        <span class="item item1">Nội dung 1</span>
+        <span class="item item2">Nội dung 2</span>
+        <span class="item item3">Nội dung 3</span> -->
+    </body>
+</html>

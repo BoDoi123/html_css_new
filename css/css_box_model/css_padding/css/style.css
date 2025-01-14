@@ -1,0 +1,32 @@
+div {
+    width: 100px;
+    height: 100px;
+    color: yellow;
+    background-color: red;
+    /* padding: 20px;
+
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 25px; */
+
+    /* Dãn đều 4 hướng */
+    padding: 20px;
+
+    /* Trên-Dưới    Trái-Phải */
+    padding: 20px 30px;
+
+    /* Trên     Trái-Phải    Dưới */
+    padding: 20px 30px 40px;
+
+    /* Trên     Phải     Dưới     Trải    (Theo chiều kim đồng hồ) */
+    padding: 20px 30px 40px 50px;
+}
+
+/* 
+    padding: có cách nhập đôi số như sau
+        1. padding: x;          -> dãn đều x(px) ra 4 hướng (trên dưới trái phải)
+        2. padding: x y;        -> x(px) (trên dưới),   y(px) (trái phải)
+        3. padding: x y z;      -> x(px) (trên),    y(px) (trái phải)   z(px) (dưới)
+        4. padding: x y z w;    -> x(px) (trên),    y(px) (phải),   z(px) (dưới),   w(px) (trái)  (Quy tắc: theo chiều kim đồng hồ) 
+*/

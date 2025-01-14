@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Flexbox layout - FlexContainer - FlexWrap and AlignContent</title>
+    </head>
+    <body>
+        <!--  
+            A. Flexbox: Flex-Container
+
+                3. Thuộc tính flex-wrap:
+
+                    - flex-wrap: nowrap                 => Default value. Các phần tử không xuống hàng => Độ rộng có thể không đạt yêu cầu 
+
+                    - flex-wrap: wrap                   => Các phần tử xuống hàng khi các item trong 1 hàng đạt giới hạn chiều rộng của box chứa (container)
+
+                    - flex-wrap: wrap-reverse           => Các phần tử xuống hàng khi đạt giới hạn + tự động đảo ngược chiều (về chiều dọc)
+                    
+                                                                => điểm bắt đầu (cross end) -> điểm kết thúc (cross start) 
+                                                                
+                                                                => (dưới lên trên)
+
+                4. Thuộc tính align-content             
+
+                    - Sử dụng kèm với flex-wrap, dùng để căn nhiều hàng theo cross axis
+
+                    *) Lưu ý: 
+                        
+                        - Khác với align-items, đó là align-content có thể áp dụng cho box chứa các item nhiều hàng còn align-items chỉ áp dụng cho box chứa duy nhất 1 hàng
+
+                    *) Giá trị:
+
+                        a) align-content: stretch                   => Default value. Các phần tử tự kéo dãn để lấp đầy container theo trục cross axis
+
+                        b) align-content: flex-start                => Các phần tử sẽ nằm trên cùng (điểm khởi đầu của cross axis)
+
+                        c) align-content: flex-end                  => Các phần tử sẽ nằm dưới cùng (điểm kết thúc của cross axis)
+
+                        d) align-content: center                    => Các phần tử sẽ nằm ở giứa của trục cross axis
+
+                        e) align-content: space-around              => Các phần tử sẽ có khoảng trắng trên dưới bằng khau (bao gồm cả lề) (Theo trục cross)
+
+                                                                            +) Khoảng trắng ở giữa 2 phần tử luôn lớn hơn khoảng giữa phần tử và lề
+
+                        f) align-content: space-between             => Các hàng cách nhau đều nhau và sát lề (Theo trục cross)
+
+
+        -->
+
+        <div class="container">
+            <div class="box box1">Block 1</div>
+            <div class="box box2">Block 2</div>
+            <div class="box box3">Block 3</div>
+            <div class="box box4">Block 4</div>
+            <div class="box box5">Block 5</div>
+            <div class="box box6">Block 6</div>
+            <div class="box box7">Block 7</div>
+            <div class="box box8">Block 8</div>
+        </div>
+    </body>
+</html>

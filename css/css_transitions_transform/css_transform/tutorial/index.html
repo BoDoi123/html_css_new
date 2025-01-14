@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--  
+            1. CSS Transform
+
+                - Cho phép chúng ta thay đổi hình dạng, trạng thái, kích thước và vị trí của các phần tử trên trang web
+
+                *) Các thuộc tính:
+
+                    +) rotate: Xoay theo deg
+
+                    +) scale: Co dãn                                            => Sử dụng scale để co giãn phần tử theo chiều ngang và chiều dọc.
+                    
+                        VD: transform: scale(1.5, 0.5)              => scale(chiêu ngang, chiều dọc)
+
+                            transform: scale(1.5)                   => scale(cả 2 chiều)
+                            scale: 1.5
+
+                    +) skew: biến dạng                                          => Sử dụng để nghiên phần tử theo 2 chiều
+
+                        VD: transform: skewX(20deg)                 => Nghiêng cạnh trái, phải theo chiều X
+                            transform: skew(20deg)
+
+                            transform: skewY(20deg)                 => Nghiêng cạnh trên, dưới theo chiều Y
+
+                            transform: skew(20deg, 10deg)           => Nghiêng cả X, Y
+
+                    +) translate: dịch chuyển                                   => Sử dụng để di chuyển 1 phần tử theo chiều ngang và dọc
+
+                        VD: transform: translate(50px)              => Dịch cạnh X
+                            transform: translateX(50px)
+                            translate: 50px
+
+                            transform: translate(50px)              => Dịch canh Y
+
+                            transform: translate(50px, 30px)        => Dịch cả 2 cạnh X, Y
+                            translate: 50px 30px
+
+            2. Lưu ý quan trọng
+
+                - Có thể kết hợp được nhiều thuộc tính
+
+                    VD: transform: scale(1.2) rotate(25deg)
+                
+                - Transform không đẩy được các phần tử xung quanh
+
+                - Có thể cần thêm prefix nếu dùng cho các trình duyệt cũ 
+        -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sint minus nostrum?</p>
+
+        <div class="box">abc</div>
+    </body>
+</html>

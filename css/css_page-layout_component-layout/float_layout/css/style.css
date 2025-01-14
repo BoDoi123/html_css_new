@@ -1,0 +1,27 @@
+.pic1 {
+    width: 200px;
+
+    float: left;
+
+    margin-right: 10px;
+}
+
+.pic2 {
+    width: 200px;
+
+    float: right;
+
+    margin-left: 10px;
+}
+
+.pic1 + p {
+    /* Clear giá trị float bên trái */
+    clear: left;
+
+    /* Clear giá trị float cả 2 bên */
+    clear: both;
+}
+
+p {
+    text-align: justify;
+}

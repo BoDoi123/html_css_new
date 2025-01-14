@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--  
+            I. Khái quát Form
+
+                1. Khái quát: <form></form> là 1 thẻ dùng để tạo một biểu mẫu trên trang web, cho phép người dùng nhập dữ liệu và gửi thông tin tới máy chủ.
+
+                2. Form Input: <input></input> là một thẻ dùng để tạp một biểu mẫu trên trang web, cho phép người dùng nhập dữ liệu và gửi thông tin tới máy chủ.
+
+                3. Các thuộc tính thường gặp của Form:
+
+                    a. id                   -> Trong cùng 1 trang, Id là duy nhất để định danh chính xác 1 phần tử trên trang web.
+
+                    b. name                 -> Giúp xác định tên của trường dữ liệu được gửi đến máy chủ web khi biểu mẫu được gửi đi.
+
+                    c. value                -> Xác định giá trị của trường dữ liệu khi một biểu mẫu được gửi đến máy chủ web. Điều này cho phép người dùng đưa ra một 
+
+                                            giá trị mặc định cho một trường dữ liệu cụ thể.
+                    
+                    d. placeholder          -> Hiển thị văn bản gợi ý cho người dùng.
+
+                    e. required             -> Trường dữ liệu phải được điền vào trưới khi gửi biểu mẫu.
+
+                    f. autocomplete="off"   -> Trình duyệt sẽ không đề xuất hoặc lưu trữ các giá trị trước đó đã được nhập trong trường đó.
+
+                4. Cách viết thẻ label khác 
+
+                    - Cách viết gọn:
+
+                        <label>
+                            UserName:
+                            <input type="text" name="username" id="username" />
+                        </label>
+        -->
+        <form action="">
+            <label for="username">UserName: </label>
+            <input type="text" name="username" id="username" placeholder="Nguyen Van Nam" required autocomplete="off" />
+
+            <br /><br />
+            <label for="password">PassWord: </label>
+            <input type="password" name="password" id="password" placeholder="Nhap pass" required />
+
+            <label>
+                Email:
+                <input type="email" name="" id="" placeholder="Email" />
+            </label>
+
+            <br /><br />
+            <input type="submit" value="Send" />
+        </form>
+    </body>
+</html>

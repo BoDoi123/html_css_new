@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Layout Display</title>
+    </head>
+    <body>
+        <!--  
+            1. Các thẻ HTML đều có thuộc tính display: - Block
+                                                    - Inline
+                                                    - Inline-block
+
+                +) Các thẻ HTML đều có trạng thái display mặc định, 2 giá trị cơ bản của display là: Block và Inline
+
+            2. Phân loại:
+
+                A. Block Element     => Các thẻ ở trạng thái mặc định, luôn chiếm 100% chiều rộng của thẻ cha bất kể nội dung dài hay ngắn 
+                        VD: div, p, h1, h2, h3, ul, ol, ....
+
+                B. Inline Element    => Hộp có kích thước phụ thuộc vào nội dung bên trong nó
+                        VD: a, strong, em, button, ....
+                    
+                    Chú ý: 1 số thuộc tính CSS không áp dụng được với inline element
+
+                        a) padding-top, padding-bottom
+
+                        b) margin-top, margin-bottom
+
+                        c) width, height, min-width, min-height (Do kích thước của thẻ inline phụ thuộc vào nội dung mà thẻ này chứa)
+
+                    => Sở dĩ inline không áp dụng được 1 số thuộc tính trên là vì thẻ inline được sinh ra để nằm trên cùng 1 hàng, 
+                        và để tránh phá võ cấu trúc dòng
+
+                C. Inline-Block     => Là sự kết hợp của 2 khối inline và block
+                
+                    - Không có sự ràng buộc về thuộc tính CSS như thẻ inline 
+        -->
+
+        <h1>Tự học lập trình web tại <strong>tuhoc.cc</strong></h1>
+        <h2>Thẻ h2 <strong>tuhoc.cc</strong> nội dung</h2>
+        <h3>Thẻ h3</h3>
+    </body>
+</html>

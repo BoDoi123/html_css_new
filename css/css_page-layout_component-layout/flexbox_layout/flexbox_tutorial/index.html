@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS PageLayout and ComponentLayout - FlexBox Layout</title>
+    </head>
+    <body>
+        <!--  
+            B. Flexbox layout
+
+                1. Mở đầu
+
+                    - Khi gặp bố cục phức tạp, việc sử dụng float gặp rất nhiều khó khăn
+
+                    - Trong phần này ta sẽ tìm hiểu về flexbox (Dạng bố cục linh hoạt)
+
+                2. Cách sử dụng flexbox
+
+                    - Khi sử dụng thuộc tính display: flex; cho box chứa
+
+                        => Box chứa sẽ có width = 100% chiều rộng của thẻ cha nó
+
+                        => Flexbox sẽ đưa các phần tử ra khỏi luồng thông thường, tuân theo các quy tắc riêng
+
+                        => Box chứa thuộc tính sẽ sinh ra 2 trục: cross axis (trục dọc) và main axis (trục ngang)
+
+                3. Các nhóm thuộc tính flexbox
+
+                    *) Phân loại:
+
+                        a) Flex-Container (Các nhóm thuộc tính khai báo tại class cha - class container)
+
+                            - justify-content
+
+                            - align-item
+
+                            - flex-wrap
+
+                            - align-content
+
+                            - flex-direction
+
+                            - flex-flow
+                    
+                        b) Flex-Item (Các nhóm thuộc tính khai báo tại class con hoặc các phần tử con)
+
+                            - align-self
+
+                            - flex-grow
+
+                            - flex-shrink
+
+                            - flex-basis
+
+                            - order
+
+                            - flex
+        -->
+
+        <div class="container">
+            <div class="box box1">Block 1</div>
+            <div class="box box2">Block 2</div>
+            <div class="box box3">Block 3</div>
+            <div class="box box4">Block 4</div>
+            <div class="box box5">Block 5</div>
+        </div>
+    </body>
+</html>

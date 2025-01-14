@@ -1,0 +1,38 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+}
+
+.box1 {
+    margin-bottom: 50px;
+}
+
+.box2 {
+    margin-top: 70px;
+}
+
+/* Margin collapse không bị theo chiều ngang */
+/* .item {
+    background-color: yellow;
+    border: 2px solid red;
+}
+
+.item1 {
+    margin-right: 10px;
+}
+
+.item2 {
+    margin-left: 20px;
+} */
+
+/* Cách sửa đơn giản: => Tác động theo 1 hướng */
+/* .box2 {
+    margin-top: 120px;
+} */
+
+/* Cách thứ 2: là sử dụng thuộc tính display: flex; cho thẻ cha của phần tử */
+body {
+    display: flex;
+    flex-direction: column;
+}

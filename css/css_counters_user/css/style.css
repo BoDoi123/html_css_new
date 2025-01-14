@@ -1,0 +1,34 @@
+.box {
+    /* Khởi tạo biến đếm và reset về 0 */
+    counter-reset: section;
+
+    padding-left: 30px;
+    background-color: aqua;
+}
+
+h2 {
+    /* Tăng biến đếm lên 1 khi gặp thẻ h2 */
+    counter-increment: section;
+
+    /* Khởi tạo biến đêm và reset về 0 khi gặp thẻ h2 */
+    counter-reset: count;
+}
+
+h2::before {
+    /* Thêm vào trước phần h2 */
+    content: "Phần " counter(section) ": ";
+
+    color: red;
+}
+
+h3 {
+    /* Tăng biến đếm lên 1 khi gặp thẻ h3 */
+    counter-increment: count;
+
+    padding-left: 20px;
+}
+
+h3::before {
+    content: counter(section) "." counter(count) " ";
+    color: yellow;
+}

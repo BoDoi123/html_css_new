@@ -1,0 +1,17 @@
+h2 {
+    background-color: yellow;
+
+    position: sticky;
+
+    /* Thêm thuộc tính top: 0; để thẻ h2 dính vào phần top của box cha gần nhất có scroll bar */
+    top: 0;
+}
+
+.content {
+    width: 400px;
+    height: 500px;
+
+    background-color: cyan;
+
+    overflow: auto;
+}

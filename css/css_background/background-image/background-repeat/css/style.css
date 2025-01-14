@@ -1,0 +1,33 @@
+.box {
+    height: 100vh;
+
+    background-image: none;
+
+    background-image: url(../bg_images/background.jpg);
+
+    /* Trạng thái mặc định */
+    background-repeat: repeat;
+
+    /* Không lặp lại */
+    background-repeat: no-repeat;
+
+    /* Lặp theo trục x (chiều ngang) */
+    background-repeat: repeat-x;
+
+    /* Lặp theo trục y (chiều dọc) */
+    background-repeat: repeat-y;
+
+    /* Cấu trúc lặp lại - cách vận dụng */
+    background-image: url(../bg_images/small_bg.jpg);
+
+    background-repeat: repeat;
+
+    /* 
+        Sử dụng kết hợp nhiều ảnh 
+            
+            Lưu ý: ảnh nào xếp trước sẽ hiển thị phía trên 
+
+                => Do đó ưu tiên ảnh trước là ảnh .png (do có thuộc tính trong suốt)
+    */
+    background-image: url(../bg_images/leaf.png), url(../bg_images/small_bg.jpg);
+}

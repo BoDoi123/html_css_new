@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Counters User</title>
+    </head>
+    <body>
+        <!--  
+            *) Cách để sử dụng Counters User:
+
+                B1: Tạo 1 biến đếm, reset nó = 0
+
+                    VD: .box {
+                            counter-reset: section;
+                        }
+                        
+                        - section là tên biến
+
+                B2: Tăng biến đếm lên 1 đơn vị
+
+                    VD: h2 {
+                            counter-increment: section;
+                        }
+
+                        - Gặp thẻ h2 thì tăng biến đếm lên 1 đơn vị
+
+                B3: Thêm trước thẻ mong muốn
+
+                    VD: h2::before {
+                            content: "Phần " counter(section) ": "; 
+                                            (Giá trị biến đếm)
+                        }
+        -->
+
+        <div class="box">
+            <h1>Nội dung cơ bản khóa học:</h1>
+            <h2>HTML/CSS Tutorials</h2>
+            <h3>HTML</h3>
+            <h3>CSS</h3>
+            <h3>W3.CSS</h3>
+
+            <h2>Scripting Tutorials</h2>
+            <h3>Javascript</h3>
+            <h3>JQuery</h3>
+            <h3>React</h3>
+
+            <h2>Programming Tutorials</h2>
+            <h3>Python</h3>
+            <h3>Java</h3>
+            <h3>C++</h3>
+        </div>
+    </body>
+</html>

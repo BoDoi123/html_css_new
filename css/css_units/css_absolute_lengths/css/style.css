@@ -1,0 +1,13 @@
+h2 {
+    /* Độ rộng của đơn vị tuyệt đối thì là cố định (fixed) */
+    font-style: 30px;
+    width: 450px;
+    height: 80px;
+    background-color: yellow;
+}
+
+p {
+    /* Độ rộng của đơn vị tương đối thì thay đổi theo độ rông của thẻ cha (góc nhìn) */
+    width: 50%;
+    background-color: blue;
+}

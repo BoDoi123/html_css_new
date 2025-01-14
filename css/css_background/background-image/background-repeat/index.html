@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Background - BackgroundImage and BackgroundRepeat</title>
+    </head>
+    <body>
+        <!--  
+            2. Thuộc tính background-image: background-repeat
+
+                => Ở trạng thái mặc định, hình ảnh sẽ lặp vô hạn, chiếm hết kích thước của thẻ chứa nó
+
+                *) Các giá trị của thuộc tính:
+
+                    - repeat                => BG lặp lại (trạng thái mặc định)
+
+                    - no-repeat             => BG không lặp lại
+
+                    - repeat-x              => BG lặp lại theo trục x (trục dọc)
+
+                    - repeat-y              => BG lặp lại theo trục y (trục ngang)
+
+            *) Lưu ý: Sử dụng kết hợp nhiều ảnh nền
+            
+                VD: .box {
+                        height: 100vh;
+                        background-image: url(bg/leaf.png), url(bg/small.jpg)
+                    }
+
+                    => Ảnh nào xếp trước sẽ nằm trên
+
+                    => Ưu tiên ảnh trước là ảnh .png (do có  thuộc tính trong suốt)
+        -->
+
+        <div class="box"></div>
+    </body>
+</html>

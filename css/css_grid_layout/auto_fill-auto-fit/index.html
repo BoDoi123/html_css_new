@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Grid Layout - Auto Fill and Auto Fit</title>
+    </head>
+    <body>
+        <!--  
+            14. Thuộc tính Grid auto-fill, auto-fit
+
+                - Dùng để xác định cách grid items (phần tử bên trong grid) được tự động xếp trong grid container khi không có đủ vị trí (được xác định trước)
+
+                    *) Tác dụng của thuộc tính:
+
+                        +) auto-fill:                       => Khi màn hình đủ lớn, sẽ tự động sinh ra thêm grid cell trống để lấp đầy
+
+                            VD: grid-template-column: repeat(auto-fill, minmax(200px, 1fr))
+
+                        +) auto-fit:                        => Khi màn hình đủ lớn, sẽ không thêm các grid cell trống mà dãn hết cỡ các item để lấp đầy chỗ trống
+
+                            VD: grid-template-column: repeat(auto-fit, minmax(200px, 1fr))
+
+        -->
+
+        <div class="container">
+            <div class="box box1">Item 1</div>
+            <div class="box box2">Item 2</div>
+            <div class="box box3">Item 3</div>
+            <div class="box box4">Item 4</div>
+            <div class="box box5">Item 5</div>
+        </div>
+    </body>
+</html>

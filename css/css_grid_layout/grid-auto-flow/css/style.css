@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    gap: 2px;
+
+    /* Default Value */
+    /* Mặc định hướng các item là row */
+    grid-auto-flow: row;
+
+    /* Số cột mặc định là 1, nên ta cần chỉ định số cột */
+    grid-template-columns: repeat(5, 100px);
+
+    /* Chuyển hướng sang column */
+    grid-auto-flow: column;
+
+    /* Chỉ định số hàng */
+    grid-template-rows: repeat(3, 50px);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid blue;
+}
+

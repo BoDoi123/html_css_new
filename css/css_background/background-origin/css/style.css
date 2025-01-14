@@ -1,0 +1,26 @@
+.box {
+    width: 200px;
+    height: 200px;
+
+    border: 50px dotted red;
+
+    padding: 50px;
+
+    margin: 50px;
+
+    background-image: url(../bg_image/1.PNG);
+
+    /* Quy định nền đổ */
+    /* Mặc định là border-box */
+    background-clip: border-box;
+
+    /* Gốc của ảnh */
+    /* Mặc định là padding box */
+    background-origin: padding-box;
+
+    /* Gốc ảnh bắt đầu từ border */
+    background-origin: border-box;
+
+    /* Gốc của ảnh bắt đầu từ content */
+    background-origin: content-box;
+}

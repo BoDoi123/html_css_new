@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+
+    color: yellow;
+
+    /* Trạng thái mặc định */
+    background-color: transparent;
+
+    background-color: red;
+
+    background-color: rgb(0 255 0 / 0.5);
+
+    background-color: #ccc;
+
+    /* Lấy màu hiện tại (Màu mặc định là black) */
+    background-color: currentColor;
+
+    margin: 45px;
+    padding: 20px;
+    border: 20px dotted red;
+}

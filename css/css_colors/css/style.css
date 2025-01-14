@@ -1,0 +1,41 @@
+h1 {
+    /* 1. Kênh màu RGB */
+    color: rgb(0, 0, 255);
+    color: rgb(134 123 145);
+
+    /* 2. Kênh màu RGBA */
+    /* alpha càng nhỏ thì càng trong suốt (chạy từ 0 -> 1) */
+    color: rgba(255, 0, 0, 0.5);
+    /* background-color: blueviolet; */
+
+    color: rgb(255 0 0 / 0.9);
+
+    /* 3. Hệ màu thập lục phân (Hex) */
+    color: #ff00ff;
+    color: #f0f;
+    color: #c2f;
+
+    /* Có thể thêm kênh màu alpha vào hệ thập lục phân */
+    color: #ff00ff;
+
+    /* 4. Color name */
+    color: deeppink;
+}
+
+/* 5. currentcolor */
+.box {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    color: pink;
+    /* background-color: currentColor; */
+    outline: 5px solid currentColor;
+    outline-offset: 5px;
+}
+
+/* color có tính kế thừa từ box cha */
+.box_child {
+    width: 50px;
+    height: 50px;
+    background-color: currentColor;
+}

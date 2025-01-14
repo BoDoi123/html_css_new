@@ -1,0 +1,21 @@
+/* Bài tập vận dụng */
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background-color: red;
+}
+
+.box1 {
+    border: 10px solid greenyellow;
+}
+
+.box2 {
+    border: 20px solid aqua;
+    margin-left: 160px;
+}
+
+.box3 {
+    border: 30px solid pink;
+    margin-left: 340px;
+}

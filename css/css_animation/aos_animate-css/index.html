@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Animate Style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- AOS Style -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--  
+            1. Mục đích sử dụng: Sử dụng khi muốn Animation tự động kích hoạt trên trang khi scroll chuột tới phần tử.
+
+            2. Cách sử dụng
+
+                - Step 1: Truy cập Trang web Animate.style copy link CSS
+
+                - Step 2: Thêm thư viện AOS
+
+                - Step 3: Thêm class thư viên Animate.css vào AOS.init(), để khởi tạo.
+
+                - Step 4: Theem animatedClassName thư viện Animate vào phần tử
+                
+                - Step 5: Nên thêm đoạn css sau vào file style.css
+
+                    [data-aos] {
+                        visibility: hidden;
+                    }
+
+                    [data-aos].animate__animated {
+                        visibility: visible;
+                    }
+        -->
+
+        <h1 data-aos="animate__bounceIn">Head Of Page</h1>
+
+        <!-- Khởi tạo AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: "animate__animated",
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+.demo {
+    /* Bức ảnh giộng = 70% box chứa nó */
+    max-width: 70%;
+
+    /* Mẹo căn giữa */
+    display: block;
+    margin: 0px auto;
+}
+
+.box {
+    max-width: 700px;
+    background-color: cyan;
+
+    margin: 0px auto;
+}

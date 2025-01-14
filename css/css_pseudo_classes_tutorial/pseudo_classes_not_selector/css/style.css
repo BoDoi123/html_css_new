@@ -1,0 +1,15 @@
+/* 
+Pseudo Classes :Not(Selector)
+    1. :not(selector)       VD: .top:not(p)                 -> Chọn các thẻ có class="top" loại trừ thẻ p
+                            VD: .top:not(:first-of-type)    -> Chọn các thẻ có class="top" loại trừ các thẻ xuất hiện lần đầu
+
+        Lưu ý: selector có thể là bất cứ bộ chọn nào đã học.
+*/
+
+.top:not(p) {
+    background-color: yellow;
+}
+
+.top:not(:first-of-type) {
+    background-color: green;
+}

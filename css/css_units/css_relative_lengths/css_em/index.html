@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Units Relative Lengths - Em</title>
+    </head>
+    <body>
+        <!--  
+            Đơn vị em: Kích thước gấp n lần font chữ hiện tại (có kế thừa)
+
+                VD: 2em     => Kích thước gấp 2 lần font chữ hiện tại
+
+                TH1: Thẻ cha và thẻ con không có font-size  => Lấy kích thước từ font-size của root (HTML) thường là 16px
+
+                TH2: Thẻ cha có font-size tuyệt đối
+
+                TH3: Cả thẻ cha và thẻ con đều đặt font-size   
+                    
+                    => Ưu tiên font-size hiện tại của chính nó
+
+                TH4: Thẻ cha có font-size tương đối
+
+                    => Thẻ cha sẽ lấy kích thước mặc định từ trình duyệt (thẻ html gốc 16px)
+                    => Thẻ con tiếp tục kế thừa từ thẻ cha
+
+            Tổng kết:
+                Đơn vị tương đối - em
+                    1. Ưu tiên 1: font-size chính phần tử đó
+                    
+                    2. Ưu tiên 2: phụ thuộc vào font-size thẻ cha
+                    
+                    3. Ưu tiên 3: phụ thuộc vào font-size root (thẻ gốc HTML)
+
+                *) Do có tính kế thừa, nên khi dùng cần dùng chú ý, các thẻ con sẽ xếp tầng và kế thừa từ thẻ cha
+        -->
+
+        <div class="parent">
+            <div class="child">Em</div>
+        </div>
+
+
+        
+    </body>
+</html>

@@ -1,0 +1,60 @@
+/* Pseudo Classes
+    1.  :hover      VD: p:hover         -> Chọn các thẻ p khi chuột di qua 
+    2.  :active     VD: a:active        -> Chọn các thẻ a khi nhấn giữ chuột
+    3.  :link       VD: a:link          -> Chọn các thẻ a có liên kết chưa click vào 
+    4.  :visited    VD: a:visited       -> Chọn các thẻ a có liên kết đã click vào
+    5.  :empty      VD: div:empty       -> Chọn các thẻ div không có nội dung
+    6.  :target     VD: #home:target    -> Chọn các thẻ có id="home" khi trên URL có hash tương ứng.
+                                        VD: https://domain.com/#home 
+    
+    
+    Câu lệnh như sau:
+        selector:Pseudo-classes {
+            (Khối lệnh) 
+            property: value
+*/
+
+/* 1. :hover */
+#line2:hover {
+    color: red;
+    font-size: 30px;
+}
+
+.dichuot:hover {
+    color: yellow;
+    font-size: 30px;
+}
+
+/* 2. :active */
+#line2 ~ p:active {
+    color: blue;
+    font-size: 30px;
+}
+
+/* 3. :link */
+.click_me:link {
+    color: chocolate;
+}
+
+/* 4. :visited */
+.click_me:visited {
+    color: red;
+}
+
+/* 5. :empty */
+.div_elm:empty {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.div_elm {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* 5. :target */
+h2:target {
+    color: blue;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Box Sizing</title>
+    </head>
+    <body>
+        <!--  
+            Box-sizing: content-box và border-box
+                
+                -> Thực tế dự án, ta sử dụng border-box thường xuyên hơn, để kích thước khớp với thiết kế, tránh phải tính toán lại phần nội dung
+
+                1. Content-box:  -> Width, Height là kích thước của content (Khi thêm padding hoặc border thì kích thước sẽ phình ra)
+                2. Border-box:   -> Width, Height là kích thươc của phần tử (Kích thước đầu vào sẽ cố định (fixed) và khi thêm border hoặc padding thì phần kích thước content là nhỏ đi để bằng được kích thước cố định)
+        -->
+
+        <h2>Nội dung trên</h2>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <h2>Nội dung dưới</h2>
+    </body>
+</html>

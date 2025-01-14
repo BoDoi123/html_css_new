@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Flexbox Layout - flex-container - align-items</title>
+    </head>
+    <body>
+        <!--  
+            A. Flexbox: Flex-Container                      => Thuộc tính nằm trong thẻ cha (Khối container) nhằm thay đổi các item của khối
+
+                *) Lưu ý: thuộc tính align-items chỉ áp dụng cho box chứa có duy nhất 1 hàng 
+
+                2. Thuộc tính align-items                   => Định vị trí các phần tử trong container (Theo trục cross axis)
+
+                    a) align-items: stretch                 => Default, kéo giãn các phần tử bằng container (Theo trục dọc cross axis)
+
+                        VD: Khi set box 1 {h = 200px}       => container {h = 200px} -> Các phần tử khác bị stretch (kéo dãn theo kích thước chứa các box)
+
+                    b) align-items: flex-start
+
+                        VD: Khi set box 1 {h = 200px}       => Khi đó chỉ có box 1 là cao 200px, các box khác nằm sát lề trên cùng (điểm bắt đầu của cross axis)
+
+                    c) align-items: flex-end
+
+                        VD: Khi set box 1 {h = 200px}       => Khi đó chỉ có box 1 là cao 200px, các box khác nằm sát lề dưới cùng (điểm kết thúc của cross axis)
+
+                    d) align-items: center
+
+                        VD: Khi set box 1 {h = 200px}       => Khi đó chỉ có box 1 là cao 200px, các box khác nằm ở giữa theo trục dọc (cross axis) của khối container 
+
+                    e) align-items: baseline                
+
+                        => Chân chữ của các box cùng nằm trên 1 đường thẳng 
+
+                    *) Luyện tập thông qua game:
+
+                        Trang web: http://game.tuhoc.cc
+        -->
+
+        <div class="container">
+            <div class="box box1">Block 1</div>
+            <div class="box box2">Block 2</div>
+            <div class="box box3">Block 3</div>
+            <div class="box box4">Block 4</div>
+            <div class="box box5">Block 5</div>
+        </div>
+    </body>
+</html>

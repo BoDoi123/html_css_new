@@ -1,0 +1,21 @@
+.container {
+    height: 150px;
+
+    display: flex;
+
+    background-color: cyan;
+
+    flex-direction: column;
+}
+
+.box {
+    width: 30%;
+
+    background-color: blue;
+
+    border: 1px solid black;
+
+    /* Do mặc định của trục main axis nằm ngang  -> flex-basis chính = width */
+    /* Tuy nhiên khi xoay trục main axis bằng flex-direction thì flex-basis chình là chiều cao của item */
+    flex-basis: 30%;
+}

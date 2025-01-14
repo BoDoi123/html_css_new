@@ -1,0 +1,46 @@
+.container {
+    height: 400px;
+
+    display: flex;
+
+    background-color: cyan;
+
+    /* 
+        *) Do thuộc tính mặc định của flex-wrap: nowrap  
+    
+            => Kích thước của phần tử trong 1 hàng không đúng (mỗi phần tử chiếm 30% box cha -> mỗi hàng chỉ chứa 3 box) 
+    */
+    flex-wrap: nowrap;
+
+    /* Các items xuống hàng */
+    flex-wrap: wrap;
+
+    /* Các items vừa xuống hàng vừa đảo ngược */
+    flex-wrap: wrap-reverse;
+
+    /* Thuộc tính align-content luôn đi kèm với thuộc tính flex-wrap */
+    flex-wrap: wrap;
+
+    /* Thuộc tính align-content: stretch (default value) */
+    align-content: stretch;
+
+    align-content: flex-start;
+
+    align-content: flex-end;
+
+    align-content: center;
+
+    /* Các phần tử cách đều nhau nhưng 2 hàng trên cùng và dưới cùng sát lề */
+    align-content: space-between;
+
+    /* Khoảng trắng giữa các phần tử là bằng nhau => Khoảng trắng giữa 2 phần từ > khoảng trắng giữa phần tử và lề */
+    align-content: space-around;
+}
+
+.box {
+    width: 30%;
+
+    background-color: blue;
+
+    border: 1px solid black;
+}

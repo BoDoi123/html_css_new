@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--  
+            1. Pseudo class :placeholder-shown
+
+                - input:placeholder-shown: Chọn các thẻ input có placeholder đang được hiển thị hay nói cách khác là các thẻ input chưa được nhập liệu.
+
+            2. Pseudo class :focus-within
+
+                - :focus-within     -> Được sử dụng để chọn phần tử cha chứa một phần tử đang được focus.
+
+                                    -> Nó kích hoạt khi bất kỳ phần tử con nào của phần tử cha đang được "focus", tức là người dùng đã chọn một phần tử con của phần tử cha đó.
+
+            3. Thuộc tính tabindex
+
+                - tabindex: Sử dụng để kiểm soát thứ tự được "tab" qua các phần tử trên một trang web khi người dùng sử dụng phím tab trên bàn phím.
+            
+            4. Form Legend
+        -->
+
+        <form action="" class="login-form">
+            <label>
+                UserName:
+                <input tabindex="1" type="text" name="username" id="username" placeholder="Nhap username" />
+            </label>
+
+            <br /><br />
+            <label>
+                Password:
+                <input tabindex="3" type="text" name="password" id="password" placeholder="Nhap password" />
+            </label>
+
+            <br /><br />
+            <label>
+                Email:
+                <input tabindex="2" type="text" name="email" id="email" placeholder="Nhap email" />
+            </label>
+
+            <br /><br />
+            <button>Submit</button>
+
+            <br /><br />
+            <fieldset>
+                <legend>Choose your favorite monster</legend>
+
+                <input type="radio" id="kraken" name="monster" value="K" />
+                <label for="kraken">Kraken</label><br />
+
+                <input type="radio" id="sasquatch" name="monster" value="S" />
+                <label for="sasquatch">Sasquatch</label><br />
+
+                <input type="radio" id="mothman" name="monster" value="M" />
+                <label for="mothman">Mothman</label>
+            </fieldset>
+        </form>
+    </body>
+</html>

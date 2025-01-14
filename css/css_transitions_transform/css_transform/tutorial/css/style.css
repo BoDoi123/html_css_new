@@ -1,0 +1,47 @@
+.box {
+    width: 200px;
+    height: 200px;
+
+    margin: 100px auto;
+
+    background: red;
+    color: #fff;
+
+    font-size: 3rem;
+
+    /* 1. Rotate (Xoay) */
+    transform: rotate(45deg);
+
+    /* Gõ tắt */
+    rotate: 45deg;
+
+    /* 2. Scale (Giãn ra) */
+    transform: scale(1.5, 0.5);
+
+    /* Gõ tắt */
+    scale: 1.5;
+
+    /* 3. Skew (Nghiêng cạnh) */
+    transform: skewX(20deg);
+
+    /* hoặc */
+    transform: skew(20deg);
+
+    transform: skewY(10deg);
+
+    /* Gõ cả 2  */
+    transform: skew(20deg, 10deg);
+
+    /* 4. Translate (Dịch chuyển) */
+    transform: translateX(50px);
+
+    translate: 50% 100px;
+
+    transform: translate(50%, 100px);
+
+    /* Dịch trục Y */
+    transform: translateY(100px);
+
+    /* 5. Kết hợp các thuộc tính */
+    transform: scale(1.2) rotate(20deg);
+}

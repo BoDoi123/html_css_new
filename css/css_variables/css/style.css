@@ -1,0 +1,55 @@
+/* Khai báo biến trong thẻ root hoặc thẻ html */
+:root {
+    --box_height: 150px;
+    --box-color: red;
+}
+
+html {
+    --box_height: 150px;
+    --box-color: red;
+}
+
+.box1 {
+    height: var(--box_height);
+    background-color: var(--box-color);
+    margin-bottom: 10px;
+}
+
+.box2 {
+    height: var(--box_height);
+    background-color: var(--box-color);
+    margin-bottom: 10px;
+}
+
+.box3 {
+    height: var(--box_height);
+    background-color: var(--box-color);
+    margin-bottom: 10px;
+}
+
+/* Có thể bị ghi đè theo thứ tự ưu tiên */
+.box3 {
+    height: 200px;
+}
+
+/* Khai báo cho phần tử nào thì sẽ áp dụng được cho phần tử đó và các cấp thấp hơn (con của nó) */
+.detail {
+    --p_font_size: 30px;
+    --p_font_weight: bold;
+    font-size: var(--p_font_size);
+}
+
+.detail span {
+    font-weight: var(--p_font_weight);
+    font-size: var(--p_font_size);
+}
+
+/* Giá trị backup của biến */
+.content {
+    --background-box: red;
+}
+
+.box4 {
+    height: 100px;
+    background-color: var(--background-box, purple); /* backup or fallback */
+}

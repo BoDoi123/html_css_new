@@ -1,0 +1,65 @@
+.container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* box shadow */
+/* img {
+    box-shadow: 0 0 20px black;
+} */
+
+/* drop shadow */
+/* img {
+    filter: drop-shadow(0 0 20px black);
+    -webkit-filter: drop-shadow(0 0 20px black);
+} */
+
+/* VD2: */
+.chat {
+    max-width: 300px;
+
+    padding: 5px;
+
+    font-size: 1.2rem;
+
+    filter: drop-shadow(0, 0, 2px, black);
+    -webkit-filter: drop-shadow(0, 0, 2px, black);
+
+    background: #fff;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    position: relative;
+}
+
+.chat::after {
+    content: "";
+    position: absolute;
+
+    border: 20px solid;
+    border-color: white transparent transparent;
+
+    right: 5%;
+    bottom: -39px;
+}
+
+/* VD3: */
+.icon {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(65%) saturate(7173%) hue-rotate(261deg) brightness(108%)
+        contrast(101%);
+}
+
+/* VD4: */
+img {
+    max-width: 300px;
+
+    filter: hue-rotate(20deg);
+    -webkit-filter: hue-rotate(20deg);
+}

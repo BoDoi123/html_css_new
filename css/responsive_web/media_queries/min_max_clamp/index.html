@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Responsive Website - min(), max() and clamp()</title>
+    </head>
+    <body>
+        <!--  
+            1. Hàm min()
+
+                - min(<value-list>):
+
+                    => Chọn giá trị nhỏ nhất (âm nhất) từ danh sách các biểu thức được phân tách bằng dấu phẩy
+
+            2. Hàm max()
+
+                - max(<value-list>):
+
+                    => Chọn giá trị lớn nhất (dương nhất) từ danh sách các biểu thức được phân tách bằng dấu phẩy
+
+            3. Hàm clamp()
+
+                - clamp(<min>, <ideal>, <max>):
+
+                    => Kẹp 1 giá trị giữa giới hạn trên và giới hạn dưới, dựa trên giá trị lý tưởng đã đặt
+
+                        VD: .blog {
+                                width: clamp(300px, 100%, 1170px);
+
+                                (Áp dụng giới hạn font size thay đổi theo vw)
+                                font-size: clamp(18px, 2vw, 24px);
+
+                                margin: 0 auto;
+                            }
+        -->
+
+        <section class="blog">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quis explicabo quibusdam quam iure
+                dicta vel iusto eveniet corrupti adipisci aliquam nulla fugiat tempore eos ullam, omnis saepe minus
+                ducimus! Quo perferendis expedita molestias numquam inventore, dicta fugit repudiandae nam obcaecati
+                rerum minus ex exercitationem distinctio. Unde doloribus soluta culpa ipsum totam optio numquam enim
+                debitis quod, consequatur odio recusandae? Tempora magni non, sit aspernatur commodi totam vitae ut
+                facere voluptatibus eum quibusdam eaque. Natus vel veniam dignissimos officia? Laboriosam consequatur
+                corporis veritatis ratione modi voluptatem sequi totam voluptatibus dignissimos! Nihil id sequi minima
+                voluptas error facilis, sint itaque culpa laborum pariatur explicabo dolorum corporis voluptatem eum,
+                debitis, esse saepe! Perferendis similique veniam quibusdam magnam quia adipisci non dolores distinctio!
+                Ex dignissimos omnis doloremque, ab dolores modi, quaerat sapiente dicta incidunt exercitationem earum
+                nisi nemo. Vitae, ab, iusto pariatur est laboriosam voluptate temporibus enim, recusandae autem hic
+                laudantium. Molestiae, est.
+            </p>
+        </section>
+    </body>
+</html>

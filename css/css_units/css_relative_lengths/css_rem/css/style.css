@@ -1,0 +1,17 @@
+.parent {
+    font-size: 10px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.child {
+    font-size: 2rem;
+
+    /* font-size: 16 * 2 = 32 */
+    width: 2rem;
+    height: 2rem;
+    background-color: violet;
+    border: 0.2rem solid red;
+}

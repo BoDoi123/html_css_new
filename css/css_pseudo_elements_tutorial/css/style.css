@@ -1,0 +1,71 @@
+/* 1. Chọn dòng đầu tiên của các thẻ p */
+p::first-line {
+    color: red;
+}
+
+/* Thuộc tính không tác động được thẻ inline */
+span::first-line {
+    color: blue;
+    background-color: yellow;
+}
+
+/* Chỉ tác động được các thẻ block hoặc inline-block */
+span {
+    display: block;
+    display: inline-block;
+}
+
+/* 2. Chọn chữ cái đầu tiên của các thẻ p */
+p::first-letter {
+    font-size: 40px;
+    color: blue;
+}
+
+/* 3. Chọn vùng đang được bôi đen của các thẻ p */
+p::selection {
+    background-color: brown;
+    color: #fff;
+}
+
+/* Cách để tác động lên tất cả các thẻ */
+/* Selector ở dưới tương đương với (*::selection) */
+::selection {
+    background-color: brown;
+    color: #fff;
+}
+
+/* 4. Chọn các điểm đánh dấu của các phần tử li */
+li::marker {
+    font-size: 40px;
+    color: red;
+}
+
+/*  
+    5. Thêm các phần tử vào đằng trước class box
+
+    6. Thêm các phần tử vào đằng sau class box
+*/
+/* Mặc định display của 2 thuôc tính là inline */
+.box::before {
+    content: "Đằng trước văn bản";
+    font-size: 40px;
+    color: red;
+}
+
+.box::after {
+    content: "Đằng sau văn bản";
+    font-size: 40px;
+    color: aqua;
+}
+
+/* Cách vận dụng thuộc tính */
+.box::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    display: inline-block;
+
+    background-color: blue;
+
+    border-radius: 999px;
+}

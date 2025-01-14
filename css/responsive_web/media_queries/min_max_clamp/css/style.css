@@ -1,0 +1,20 @@
+.blog {
+    background: cyan;
+}
+
+/* 1. Hàm min() */
+.blog {
+    width: min(800px, 100%);
+}
+
+/* 2. Hàm max() */
+.blog {
+    width: max(800px, 100%);
+}
+
+/* 3. Hàm clamp() */
+.blog {
+    width: clamp(300px, 100%, 1170px);
+
+    font-size: clamp(18px, 2vw, 24px);
+}

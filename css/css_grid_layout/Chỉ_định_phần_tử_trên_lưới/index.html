@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Grid Layout - Chỉ định phần tử trên lưới</title>
+    </head>
+    <body>
+        <!--  
+            II. Định vị phần tử trên lưới - Grid Item
+
+                5. Định vị trí phần tử với giá trị dương
+
+                    - Muốn định vị 1 phần tử chiếm bao nhiêu ô hoặc là chiếm từ ô nào đến ô nào ta có:
+
+                        VD: Tác động thay đổi vị trí item 1 bắt đầu từ dòng 1 -> 3 và cột bắt đầu từ line 2 -> 4
+
+                            .box1 {
+                                grid-row-start: 1;
+                                grid-row-end: 3;
+
+                                grid-column-start: 2;
+                                grid-column-end: 4;
+                            }
+
+                6. Định vị trí phần tử với giá trị âm
+
+                    - Định vị trí dòng, cột âm
+
+                7. Cú pháp viết tắt 
+
+                    a. Cú pháp thứ 1
+                
+                        - grid-row là viết tắt của grid-row-start và grid-row-end.
+
+                        - grid-column là viết tắt của grid-column-start và grid-column-end.
+
+                        - Nếu 1 giá trị được cung cấp, nó sẽ chỉ định grid-row-start (grid-column-start).
+
+                        - trước sau / có thể có space hoặc không.
+
+                        VD: 
+
+                            grid-row: 1 / 3;                     => start: 1 -> end: 3
+
+                            grid-column: 2 / 4;                  => start: 2 -> end: 4      
+
+                    b. Cú pháp thứ 2: grid-area
+
+                        - grid-area: là viết tắt của grid-row-start, grid-column-start, grid-row-end và grid-column-end. Nếu 4 giá trị được chỉ định
+
+                            VD: grid-area: 1 / 2 / 3 / 4;
+
+                                =>  grid-row-start: 1
+                                    grid-column-start: 2
+                                    grid-row-end: 3
+                                    grid-column-end: 4
+
+                8. Span                                     => Mở rộng thêm bao nhiêu ô từ vị trí hiện tại
+
+                    VD: grid-column: span 2;                => Mở rộng ra 2 ô tính từ vị trí hiện tại
+        -->
+
+        <div class="container">
+            <div class="box box1">Item 1</div>
+            <div class="box box2">Item 2</div>
+            <div class="box box3">Item 3</div>
+            <div class="box box4">Item 4</div>
+            <div class="box box5">Item 5</div>
+            <div class="box box6">Item 6</div>
+            <div class="box box7">Item 7</div>
+            <div class="box box8">Item 8</div>
+            <div class="box box9">Item 9</div>
+            <div class="box box10">Item 10</div>
+            <div class="box box11">Item 11</div>
+            <div class="box box12">Item 12</div>
+            <div class="box box13">Item 13</div>
+            <div class="box box14">Item 14</div>
+            <div class="box box15">Item 15</div>
+        </div>
+    </body>
+</html>

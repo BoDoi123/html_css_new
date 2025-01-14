@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS PageLayout and ComponentLayout - FloatLayout</title>
+    </head>
+    <body>
+        <!--  
+            I. Page layout and Component layout
+
+                1. Page layout:
+
+                    - Còn được gọi là Bố cục - dàn trang cơ bản là cách ta xếp đặt khối bố cục con (component layout) lên trên webpage
+
+                    - Việc xếp đặt giúp cho trang web nhìn đẹp, thu hút người xem, và truyền tải nội dung 1 cách có trặt tự, logic
+
+                2. Component layout:
+
+                    - Các component layout là các bố cục con, nơi mà: text, images, video... và các nội dụng khác được xếp đặt 
+
+            II. Cách xây dựng layout với CSS
+
+                3. Có 3 cách phổ biến để xây dựng layout với CSS
+
+                    - Cách 1: sử dụng Float Layout
+
+                    - Cách 2: Sử dụng Flex Box
+
+                    - Cách 3: Sử dụng CSS Grid
+
+            III. Float layout
+
+                1. Khái niệm về Float layout
+
+                    - Trên 1 page layout có rất nhiều component layout (bố cục con)
+                    
+                    - Float layout có thể giúp dàn trang theo chiều ngang, hoặc chữ bao quanh ảnh
+
+                        VD: xếp các bức ảnh theo chiều ngang hoặc xếp thanh điều hướng navigation menu
+
+                2. Cách sử dụng float layout 
+
+                    *) Ở trạng thái mặc định, các phần tử:
+
+                        - inline: nằm trên cùng hàng
+
+                        - block: sẽ chiếm hết chiều ngang
+
+                        - Các phần tử này sẽ sắp xếp theo chiều dọc từ trên xuống dưới
+
+                    *) Lưu ý:
+
+                        - Khi sử dụng float: left, image bị trôi khỏi luồng bình thường, các phần tử còn lại sẽ bao quanh phần tử image
+
+                        - Trong trường hợp muốn 1 phần tử nào đó không bị chèn ép để bao quanh hình. Ta sử dụng:
+
+                            =>  clear: left (clear giá trị float bên trái)
+
+                                clear: right (clear giá trị float bên phải)
+
+                                clear: both (clear giá trị cả 2 hướng)
+
+                3. Tổng kết 
+                
+                    *)  Float layout đã cũ, và phức tạp khi trang web nhiều thành phần,
+                        trong trường hợp ta muốn xây dựng 1 giao diện phức tạp người ta dùng các phương pháp khác tối ưu hơn
+                        
+                    => Ngày nay: Trong thiết kế hiện đại, lập trình viên thường không sử dụng thuộc tính float mà dùng các công cụ tối ưu hơn 
+
+                        VD: 
+                            - Flexbox
+
+                            - CSS Grid
+
+                            - External Frameworks: Bootstrap
+        -->
+
+        <img src="./images/avatar.jpg" alt="avatar" class="pic1" />
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quae! Temporibus vero animi asperiores
+            doloribus quam dolore fuga aperiam nulla numquam. Quasi tempore in corporis eveniet ea deleniti culpa minus!
+            Asperiores ipsa excepturi cupiditate ea, nisi et distinctio ipsum. Exercitationem aspernatur deserunt
+            dolorum, eum nam totam aperiam perferendis vero assumenda accusamus quo nisi tenetur modi? Rerum quasi eum
+            eos nostrum? Officiis porro, magnam commodi fugit modi iste eos odit reiciendis voluptatibus? Nulla qui, et
+            deserunt cumque veniam suscipit iste voluptatem distinctio. Dicta repellendus voluptatum impedit unde fugit,
+            inventore iste quis. Labore corporis quae vero laboriosam non placeat magnam dolores repellendus sequi,
+            aperiam exercitationem nesciunt quia inventore fugiat modi culpa esse voluptas perspiciatis recusandae
+            facere. Sequi error doloribus vel architecto nesciunt. Quibusdam eius excepturi laudantium nam? Vel aliquam
+            quaerat explicabo ad. Doloremque ipsum maxime sunt porro? Tenetur molestias cumque alias aliquid quae,
+            libero vitae incidunt eum repellendus omnis, odio quasi maiores.
+        </p>
+
+        <img src="./images/avatar1.jpg" alt="avatar1" class="pic2" />
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sequi alias mollitia tenetur commodi, itaque
+            numquam velit ratione quos accusamus nostrum consequuntur tempora earum, rerum perspiciatis illum veritatis
+            asperiores obcaecati? Nesciunt quae ratione nisi veritatis fugit expedita deserunt molestias accusantium.
+            Sapiente vel iste reiciendis quasi reprehenderit pariatur? Minima, libero! Sit placeat ab corporis similique
+            itaque eos quam aperiam ducimus deleniti! Fugit esse ipsa quasi. Ab porro ipsa qui natus non aut, eius
+            blanditiis velit dolorum nulla debitis quae quaerat dolore neque ipsam, accusantium nam eveniet dolores.
+            Soluta culpa atque debitis? Similique ad laboriosam fugiat accusamus nemo id! Dolor perspiciatis saepe
+            similique sed, voluptates dolorum dolorem qui tempore delectus, blanditiis commodi repellat corporis totam
+            consequatur officiis amet, corrupti alias exercitationem quia? Vero obcaecati voluptatum sit quos nostrum
+            quae iusto corporis ipsum optio dolores qui earum nemo laborum accusamus, architecto quis, porro quidem!
+            Doloremque provident nemo placeat et aperiam laboriosam excepturi doloribus? Debitis velit ut odio delectus
+            ullam nostrum fugiat facilis non repellendus placeat saepe ipsum pariatur odit at repudiandae illum tempore
+            maxime veniam dicta nemo dolorum sit quasi, laborum a. Ducimus? Doloremque sapiente fuga pariatur neque
+            commodi ratione quo qui cumque dicta! Voluptas exercitationem quaerat quasi totam possimus beatae,
+            cupiditate fugit reprehenderit iure expedita ullam et fugiat numquam magnam necessitatibus dolorem.
+        </p>
+    </body>
+</html>

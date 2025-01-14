@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Background - LinearGradient</title>
+    </head>
+    <body>
+        <!--  
+            2. Thuộc tính Background-image: linear-gradient         => dải nền chuyển sắc
+            
+                *) background-image: linear-gradient(direction, color-stop1, color-stop2, ....)
+
+                    - direction: nếu không nhập             => Là tham số không bắt buộc. Mặc định là top -> bottom
+
+                    - hai (> 2) tham số color đằng sau      => Là tham số bắt buộc. Đây là dải màu chuyển sắc A -> B -> ...
+                    
+                    VD: bakground-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%)
+
+                        => Phần trăm không áp dụng chuyển sắc từng màu
+
+                    *) linear-gradient Direction    => điều hướng chuyển màu
+
+                        - Các hướng chuyển:     to left                 => phải -> trái
+                                                to right                => trái -> phải
+                                                to top                  => dưới -> trên
+                                                to bottom               => trên -> dưới     (mặc định)
+
+                                                (1 số hướng chéo)
+                                                to top left             => từ dưới phải -> trên trái
+                                                to top right            => từ dưới trái -> trên phải 
+                                                to bottom left          => từ trên phải -> dưới trái
+                                                to bottom right         => từ trên trái -> dưới phải   
+                                                
+                        - Trong dự án thì ta sẽ điểu chỉnh hướng chuyển màu theo độ (degree)
+
+                *) Có thể sử dụng trang web sau để lấy bakground-image: linear-gradient
+
+                    => https://cssgradient.io/gradient-backgrounds/
+        -->
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </body>
+</html>

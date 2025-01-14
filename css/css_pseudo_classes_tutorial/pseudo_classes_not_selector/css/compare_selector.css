@@ -1,0 +1,50 @@
+/*
+    Mức độ ưu tiên (mạnh -> yếu) áp dụng khi có nhiều thuộc tính chồng chéo nhau cùng tác động lên 1 phần tử
+        1. !important                                       VD: * {
+                                                                    color: red !important;
+                                                                }
+        
+        2. Inline style (Viết trên code HTML)               VD: <body>
+                                                                    <h1 style="color: brown;" id="line_1" class="top">Thẻ h1</h1>
+                                                                </body>
+        
+        3. ID (#) selector                                  VD: #line_1 {
+                                                                    color: yellow;
+                                                                }
+        
+        4. Class (.) or pseudo-classes (:) selector         VD: .top {
+                                                                    color: green;
+                                                                } 
+                                                                 
+                                                                h1:first-of-type {
+                                                                    color: violet;
+                                                                }
+        
+        5. Element Selector (h, p, li, div, ....)           VD: h1 {
+                                                                    color: blue; 
+                                                                }
+        
+        6. Universal selector (*) : Bộ chọn chung           VD: * {
+                                                                    color: pink;
+                                                                }
+*/
+
+/* 1. Bộ chọn chung (*) */
+* {
+    color: red;
+}
+
+/* 2. Element Selector (h, p, li,....) */
+h1 {
+    color: blue !important;
+}
+
+/* 3. Class (.) or pseudo-classes (:) Selector */
+.demo {
+    color: green;
+}
+
+/* ID (#) Selector */
+#theh1 {
+    color: yellow;
+}

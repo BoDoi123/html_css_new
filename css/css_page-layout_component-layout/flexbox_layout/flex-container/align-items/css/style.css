@@ -1,0 +1,39 @@
+* {
+    font-size: 1.5rem;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 300px;
+
+    display: flex;
+
+    background-color: cyan;
+
+    justify-content: space-evenly;
+
+    /* Mặc định của align-items */
+    align-items: stretch;
+
+    align-items: flex-start;
+
+    align-items: flex-end;
+
+    align-items: center;
+
+    /* Chân chữ của các box cùng nằm trên 1 đường thẳng */
+    align-items: baseline;
+}
+
+.box {
+    background-color: blue;
+}
+
+.box1 {
+    height: 200px;
+
+    font-size: 3rem;
+}

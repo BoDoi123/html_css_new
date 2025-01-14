@@ -1,0 +1,16 @@
+body {
+    background-image: url(../images/background.jpg);
+}
+
+h2 {
+    /* opacity: 0; */
+
+    /* display: none; */
+
+    visibility: hidden;
+    background-color: blue;
+}
+
+span {
+    visibility: visible;
+}

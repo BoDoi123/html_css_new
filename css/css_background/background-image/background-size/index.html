@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Background - BackgroundImage and BackgroundRepeat</title>
+    </head>
+    <body>
+        <!--  
+            2. Thuộc tính background-image: background-size         => Điều chỉnh kích thước ảnh nền
+
+                *) Khi chưa set kích thước       => Ảnh mặc định hiển thị kích thước với tỷ lệ 1:1
+
+                *) ! số giá trị:
+
+                    - background-size: contain                              =>  Ảnh vừa khung hình
+                                                                                Giữ nguyên tỷ lệ ảnh
+                                                                                Không bị mất ảnh
+                                                                                Nếu còn khoảng trống ảnh sẽ bị lặp lại  (*)
+
+                    - background-size: cover                                =>  Ảnh vừa khớp với khung hình
+                                                                                Giữ nguyên tỷ lệ ảnh (không bị méo)
+                                                                                Có thể mất 1 phần ảnh                   (*)
+                                                                                Không bị lặp ảnh                        (*)
+
+                    - background-size:  100% (100px)    100% (100px)        =>  Chiều rộng = 100% chiều rộng box chứa   (= 100px)
+                                        (chiều rộng)    (chiều cao)             Chiều cao = 100% chiều cao box chứa     (= 100px)
+
+        -->
+
+        <div class="box"></div>
+    </body>
+</html>

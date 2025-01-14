@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Typography - white-space and word-break</title>
+    </head>
+    <body>
+        <!--  
+            12. Thuộc tính white-space      => Quy định về khoảng trắng khi code
+
+                *) Ngoại trừ thẻ pre:   => Giữ nguyên định dạng code
+
+                    a) Trong code có nhiều khoảng trắng     => 1 khoảng trắng
+
+                    b) Nhiều dấu xuống dòng                 => 1 khoảng trắng
+
+                    c) Nội dung quá dài, chạm tới lề        => Xuông dòng
+
+                *) Các giá trị thuộc tính:
+
+                    white-space: normal         => Trạng thái mặc định
+
+                    white-space: nowrap         => Không xuống dòng (kể cả chạm tới lề)
+                    
+                    white-space: pre            => Giữ nguyên định dạng code (giống thẻ pre) 
+                
+        (ít dùng)   white-space: pre-line:      => Giữ định dạng theo line(enter)
+
+                        - Tất cả dấu khoảng trắng thừa mỗi dòng trong nội dung văn bản sẽ bị loại bỏ
+                    
+                        - Dòng mới (xuống dòng) được giữ nguyên
+
+        (ít dùng)   white-space: pre-wrap       => Giữ nguyên định dạng code
+
+                        - Tất cả dấu cách thừa ở trong nội dung văn bản sẽ được giữ nguyên
+
+                        - Dòng mới (xuống dòng) được giữ nguyên
+
+
+            13. Thuộc tính word-break:
+
+                *) Khi đoạn text hoặc link dài, người dùng nhập liền nhau thì có thể gây vỡ giao diện vì text không bị xuống dòng
+
+                    => Có thể dùng thuộc tính: 
+                        
+                        word-break: break-all       => Để bẻ xuống hàng
+        -->
+
+        <p>
+            Loremipsumdolorsitamet,consecteturadipisicingelit.Nihil,deseruntatquisquamveniam,ametprovident
+            repellatoptioinciduntnostrumnemoaperiamarchitectoidsaepeesse!Illonobisrepellendusvoluptatibus
+            quam.Consectetur,facilisplaceat.Possimusexpeditainciduntexercitationemeligendiofficiisadlabore,dicta
+            voluptatequicumque.Sequiundedignissimosnullasaepenecessitatibusmagnam,voluptatibusautemiure blanditiis
+            veniam facere est a.
+        </p>
+    </body>
+</html>

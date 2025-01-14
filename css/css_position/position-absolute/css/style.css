@@ -1,0 +1,56 @@
+.box {
+    width: 100px;
+    height: 100px;
+
+    color: #fff;
+
+    /* Căn giữa text ở các khối dùng flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Thẻ 2 sẽ lấy tổ tiên gần nhất có thuộc tính position: relative */
+.header {
+    background-color: yellow;
+
+    position: relative;
+}
+
+.content {
+    background-color: cyan;
+    width: 400px;
+    margin: 40px;
+
+    /* Thêm thuộc tính của thẻ cha là relative */
+    position: relative;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue;
+
+    /* TH1: khi không có tổ tiên có thuộc tính position: relative */
+
+    /* Thẻ 2 sẽ được đưa lên 1 mặt phẳng phía trên so với mặt phẳng thông thường */
+    /* Chưa có thuộc tính top, right, bottom, left thì thẻ 2 vẫn nằm ở vị trí cũ tuy nhiên ở mặt phẳng phía trên */
+    position: absolute;
+
+    /* Khi thêm thuộc tính top, right, bottom, left thì thẻ 2 sẽ lấy gốc ở top left của webpage (góc trên cùng bên trái) */
+    left: 0px;
+    top: 0px;
+
+    /* TH2: Khi có thẻ tổ tiên có chứa thuộc tính position: relative */
+    /* Khi đó thẻ 2 sẽ được định vị theo thẻ tổ tiên có thuộc tính đó */
+}
+
+.box3 {
+    background-color: green;
+}
+
+h1 {
+    background-color: purple;
+}

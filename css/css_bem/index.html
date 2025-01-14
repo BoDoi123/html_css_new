@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Bem</title>
+    </head>
+    <body>
+        <!--  
+            I. Đặt vấn đề
+
+                1. Xung đột CSS: Trong 1 dự án, đặc biệt là các dự án lớn, thì số lượng các khối, các phần tử lớn.
+
+                    => Số lượng các phần tử trên trang lớn.
+
+                    => Dễ bị trùng tên class, để đặt cho các phần tử.
+
+                    => CSS sử dụng cách thông thường -> Có cấu trúc xếp tầng, nếu di chuyển khối code CSS đi vị trí khác -> Có thể dẫn tới xung đột, 
+                        
+                        ghi đè CSS do thứ tự ưu tiên
+
+                2. Khó bảo trì: Khi CSS không được cấu trúc và đặt tên một cách logic, việc bảo trì trang web trở nên khó khăn. Bạn có thể mất nhiều 
+
+                    thời gian tìm kiếm và chỉnh sửa các lớp CSS liên quan khi cần thay đổi giao diện. 
+
+            II. BEM là gì?
+
+                - BEM là viết tắt của Block, Element, Modifier. Là 1 phương pháp đặt tên và quản lý class CSS
+
+                    1. Block
+
+                        => Là các khối độc lập.
+
+                            VD: header, navigation, footer, menu.....
+
+                    2. Element
+
+                        => Có thể coi element là phần tử con của block, element được gắn về mặt ngữ nghĩa với block của nó.
+
+                            VD: title, description, image .....
+
+                    3. Modifier
+
+                        => Là thành phần dùng để bổ nghĩa cho block hoặc element.
+
+                            VD: checked, disabled, small, red, signIn, signUp ..... 
+
+            III. Ví dụ sử dụng BEM
+
+                *) Cú pháp BEM:
+
+                    1. Block
+
+                        - Cú pháp: .block, .footer, .card, .card-list, ....
+
+                    2. Element
+
+                        - Cú pháp: block__element
+
+                            VD: .footer__logo, .footer__desc, .card__image, ....
+
+                    3. Modifier
+
+                        - Cú pháp: 
+
+                            +) block__element--modifier (Nếu bổ nghĩa cho Element)
+
+                                VD: .card__image--large, .card__image--small, ....
+
+                            +) block--modifier (Nếu bổ nghĩa cho Block)
+
+                                VD: .modal--custom, .modal--fullscreen, .....
+
+                IV. Lưu ý
+
+                    - BEM không có mục đích phản ánh cấu trúc lồng nhau của các block, các element
+
+                        *) Giả sử: Một block chứa 1 element 1, 
+                                    element 1 chứa element 2,
+                                    element 2 chứa element 3
+
+
+        -->
+
+        <!-- TH1 -->
+        <div class="card">
+            <div class="card__image"></div>
+
+            <div class="card__title"></div>
+
+            <div class="card__desc"></div>
+
+            <div class="card__button">
+                <div class="card__button--primary"></div>
+
+                <div class="card__button--secondary"></div>
+            </div>
+        </div>
+
+        <!-- TH2 -->
+        <div class="card-list">
+            <!-- Item 1 -->
+            <div class="card-item">
+                <div class="card-item__image"></div>
+
+                <div class="card-item__title"></div>
+
+                <div class="card-item__desc"></div>
+
+                <div class="card-item__button">
+                    <div class="card-item__button--primary"></div>
+
+                    <div class="card-item__button--secondary"></div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="card-item">
+                <div class="card-item__image"></div>
+
+                <div class="card-item__title"></div>
+
+                <div class="card-item__desc"></div>
+
+                <div class="card-item__button">
+                    <div class="card-item__button--primary"></div>
+
+                    <div class="card-item__button--secondary"></div>
+                </div>
+            </div>
+
+            <!-- Extension BEM helper -->
+            <div class="block">
+                <div class="block__element1">
+                    <div class="block__element2"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

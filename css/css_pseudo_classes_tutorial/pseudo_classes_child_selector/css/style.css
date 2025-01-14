@@ -1,0 +1,76 @@
+/* Pseudo Classes Child Selector: Tạo kiểu cho các phần tử con
+    
+    1. :first-child             VD: p:first-child           -> Chọn các thẻ p là thẻ con đầu tiên 
+    2. :last-child              VD: p:last-child            -> Chọn các thẻ p là thẻ con cuối cùng
+    3. :nth-child(n)            VD: p:nth-child(2)          -> Chọn các thẻ p là thẻ con thứ 2 từ trên xuống
+    4. :nth-last-child(n)       VD: p:nth-last-child(2)     -> Chọn các thẻ p là thẻ con thứ 2 tính từ cuối lên
+    5. :only-child              VD: p:only-child            -> Chọn các thẻ p là thẻ con duy nhất
+    
+    
+    Cấu trúc khối lệnh:
+        selector:Pseudo-classes {
+            (Khối lệnh css)
+            property: value;
+        }
+
+*/
+
+/* 1. :first-child */
+
+p:first-child {
+    color: red;
+    font-size: 30px;
+}
+
+/* 2. :last-child */
+p:last-child {
+    color: blue;
+    font-size: 35px;
+}
+
+/* 3. :nth-child(n) */
+p:nth-child(2) {
+    color: pink;
+}
+
+/* Ngoài cách nhập số n vào, ta có thể dùng:
+    1. odd: nhày theo n lẻ
+    2. even: nhày theo n chắn
+    3. 2n + 1: nhảy theo bước nhày mong muốn 
+*/
+p:nth-child(even) {
+    color: yellow;
+    font-size: 30px;
+}
+
+/* 
+n = 0 -> 1
+n = 1 -> 4
+n = 2 -> 7 
+*/
+p:nth-child(3n + 1) {
+    color: violet;
+    font-size: 20;
+}
+
+/* 4. :nth-last-child(n) */
+p:nth-last-child(2) {
+    color: green;
+    font-size: 15px;
+}
+
+/* Ngoài cách nhập số n vào, ta có thể dùng:
+    1. odd: nhày theo n lẻ
+    2. even: nhày theo n chắn
+    3. 2n + 1: nhảy theo bước nhày mong muốn 
+*/
+p:nth-last-child(odd) {
+    color: brown;
+    font-size: 30px;
+}
+
+/* 5. :only-child */
+p:only-child {
+    color: purple;
+    font-size: 30px;
+}

@@ -1,0 +1,52 @@
+.box {
+    width: 200px;
+    height: 200px;
+
+    border: 50px dotted green;
+
+    padding: 50px;
+
+    /* background-color             => Đặt màu nền */
+    background-color: cyan;
+
+    /* background-image             => Đặt ảnh nền */
+    background-image: url(../bg_image/1.PNG);
+
+    /* background-position          => Vị trí bắt đầu của ảnh */
+    /* background-position: top left (Default) */
+    background-position: top left;
+
+    /* background-size              => Kích thước ảnh nền */
+    background-size: contain;
+    background-size: cover;
+
+    /* background-repeat            => Ảnh có lặp lại không */
+    /* background-repeat: repeat (Default) */
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+
+    /* background-origin            => Xác định gốc của bức ảnh đặt ở đâu */
+    /* background-origin: padding-box   (Default) */
+    background-origin: padding-box;
+    background-origin: border-box;
+    background-origin: content-box;
+
+    /* background-clip              => Nền đổ từ vùng nào */
+    /* background-clip: border-box  (Default) */
+    background-clip: border-box;
+    background-clip: padding-box;
+    background-clip: content-box;
+}
+
+/* Cú pháp viết tắt */
+.box {
+    /* Cú pháp viết tắt */
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+
+    background: red;
+    background: red url(../bg_image/1.PNG) left;
+    background: red url(../bg_image/1.PNG) center / contain no-repeat;
+    background: red url(../bg_image/1.PNG) center / contain no-repeat padding-box;
+    background: red url(../bg_image/1.PNG) center / contain no-repeat padding-box border-box;
+    background: red url(../bg_image/1.PNG) center / contain no-repeat padding-box border-box fixed;
+}

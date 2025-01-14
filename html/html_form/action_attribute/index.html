@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--  
+            1. Thuộc tính action 
+
+                *) Action:
+
+                    - Trong form khi người dùng nhấn submit thì dữ liệu trên form sẽ gửi đi.
+
+                    - Dữ liệu sẽ gửi đến url được khai báo trong thuộc tính action.
+
+                    - Phía backend sau khi nhận dữ liệu sẽ xử lý dữ liệu này.
+        -->
+
+        <form action="/test">
+            <label>
+                UserName:
+                <input type="text" name="username" id="" />
+            </label>
+
+            <input type="submit" value="Send me" />
+        </form>
+
+        <h2>1. Google Search</h2>
+
+        <form action="https://www.google.com/search">
+            <label>
+                Google Search:
+                <input type="text" name="q" id="" />
+            </label>
+
+            <input type="submit" value="Search" />
+        </form>
+
+        <h2>2. Youtube Search</h2>
+
+        <form action="https://www.youtube.com/results">
+            <label>
+                Youtube Search:
+                <input type="text" name="search_query" id="" />
+            </label>
+
+            <input type="submit" value="Search" />
+        </form>
+    </body>
+</html>

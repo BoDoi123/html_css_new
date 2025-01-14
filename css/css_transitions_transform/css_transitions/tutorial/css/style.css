@@ -1,0 +1,50 @@
+.btn {
+    width: 200px;
+    height: 40px;
+
+    background-color: green;
+    color: #fff;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+
+    /* 1. Thuộc tính bắt buộc có */
+    transition-duration: 0.5s;
+
+    /* 2. Áp dụng transition cho background-color và color */
+    transition-property: background-color, color;
+
+    /* Nếu không ghi gì thì có thể hiểu là all */
+    /* Nên sử dụng transition cho các thuộc tính cụ thể (để giảm tải quá trình xử lý của trình duyệt) */
+
+    /* 3. Transition-delay */
+    /* Sau 1 khoảng thời gian thì mới thực hiện transition */
+    transition-delay: 3s;
+
+    /* 4. Transition-timing-function */
+    /* Giá trị mặc định */
+    transition-timing-function: ease;
+
+    /* Giá trị tùy chỉnh */
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.59, 0.85);
+
+    /* Transition-shorthand */
+
+    /* Lưu ý: transition-duration phải viết trước transition-delay */
+    transition: all ease-in 1s 3s;
+    /* duration: 1s và delay: 3s */
+
+    /* Lưu ý: Cách liệt kê các thuộc tính có thể sử dụng transition */
+    transition: color 1s 3s ease-in, background-color 1s 3s ease-in;
+
+    /* Hoặc có thể viết như này */
+    transition-property: color, background-color;
+}
+
+.btn:hover {
+    color: yellow;
+    background-color: red;
+}

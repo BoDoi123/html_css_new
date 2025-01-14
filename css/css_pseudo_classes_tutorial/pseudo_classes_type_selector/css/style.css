@@ -1,0 +1,60 @@
+/* 
+Pseudo classes Type Selector
+    
+    1. :first-of-type           VD: p:first-of-type         -> Chọn các thẻ p xuất hiện lần đầu tiên trong thẻ cha
+    2. :last-of-type            VD: p:last-of-type          -> Chọn các thẻ p xuất hiện lần cuối cùng trong thẻ cha
+    3. :nth-of-type(n)          VD: p:nth-of-type(n)        -> Chọn các thẻ p xuất hiện lần thứ n trong thẻ cha
+    4. :nth-last-of-type(n)     VD: p:nth-last-of-type(n)   -> Chọn các thẻ p xuất hiện lần thứ n trong thẻ cha, tính từ dưới lên
+    5. :only-of-type            VD: p:only-of-type          -> Chọn các thẻ p xuất hiện duy nhất trong thẻ cha
+
+    Cú pháp chung
+        selector:Pseudo-classes-type-selector {
+            (Khối lệnh)
+            property: value;
+        }
+*/
+
+/* 1. :first-of-type */
+p:first-child {
+    color: green;
+    font-size: 30px;
+}
+
+p:first-of-type {
+    color: red;
+    font-size: 30px;
+}
+
+/* 2. :last-of-type */
+h2:last-of-type {
+    color: pink;
+    font-size: 40px;
+}
+
+/* 3. :nth-of-type(n) */
+p:nth-child(3) {
+    color: blue;
+    font-size: 25px;
+}
+
+p:nth-of-type(3) {
+    color: yellow;
+    font-size: 30px;
+}
+
+/* 
+Có thể thay n bằng: 
+    1. odd (nhảy theo bước lẻ)
+    2. even (nhảy theo bước chẵn)
+    3. 2n + 1 (nhảy theo bước tùy ý)
+*/
+p:nth-of-type(odd) {
+    color: violet;
+    font-size: 35px;
+}
+
+/* 5. :only-of-type */
+p:only-of-type {
+    color: purple;
+    font-size: 50px;
+}

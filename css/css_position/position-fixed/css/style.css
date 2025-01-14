@@ -1,0 +1,33 @@
+.mes-bottom a {
+    font-size: 2rem;
+    color: #0082ff;
+
+    /* Đưa icon chuyển sang luồng khác, cố định nó ở phần vùng nhìn */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.nav {
+    background-color: #555;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-right: 1px solid white;
+}
+
+h1 {
+    margin-top: 50px;
+}

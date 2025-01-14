@@ -1,0 +1,19 @@
+* {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+
+    background-color: cyan;
+
+    /* Muốn container chỉ có độ rộng bằng nội dùng ta dùng inline-flex */
+    display: inline-flex;
+
+    /* Thuộc tính gap */
+    gap: 40px;
+}
+
+.box {
+    background-color: blue;
+}

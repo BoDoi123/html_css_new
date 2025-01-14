@@ -1,0 +1,31 @@
+.container {
+    height: 150px;
+
+    display: flex;
+
+    background-color: cyan;
+
+    /* flex-wrap: wrap; */
+
+    /* overflow: auto; */
+}
+
+.box {
+    background-color: blue;
+
+    border: 1px solid black;
+
+    width: 30%;
+
+    /* Các item đảm bảo độ rộng 30% */
+    /* flex-shrink: 0; */
+}
+
+.box1,
+.box2 {
+    /* Chỉ có item 1 và item 2 không bị co lại */
+    flex-shrink: 0;
+
+    /* 1 là giá trị mặc định, sẽ co lại */
+    flex-shrink: 1;
+}

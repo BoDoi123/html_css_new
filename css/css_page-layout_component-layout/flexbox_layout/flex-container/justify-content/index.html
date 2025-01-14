@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS FlexBox Layout - Justify-content</title>
+    </head>
+    <body>
+        <!--  
+            A. Flexbox: Flex-container      (Các thuộc tính được dùng cho khối cha (khối container))
+
+                1. Thuộc tính Justify-content               => Định vị trí item theo trục main axis (mặc định là trục ngang)
+
+                    a) Theo mặc định, trục main axis sẽ nằm ngang, còn trục cross axis sẽ nằm dọc
+
+                        => Justify content sẽ căn các phần tử theo trục main axis 
+
+                        *) Lưu ý: Có thể xoay trục
+
+                    b) Bố cục    
+                        - Điểm bắt đầu của trục main axis là left -> kết thúc right (main start -> center -> main end)
+    
+                        - Điểm bắt đầu của truc cross axis là top -> kết thúc bottom (cross start -> center -> cross end)
+
+                            *) Lưu ý: Đối với một số ngôn ngữ đọc từ phải qua trái 
+
+                                => Điểm khởi đầu và kết thúc của main axis và cross axis sẽ ngược lại
+
+                    c) Giá trị của thuộc tính
+
+                        VD: justify-content: flex-start (defalt)            => Định vị trí item sang bên trái (điểm khởi đầu) của khối container
+
+                            justify-content: flex-end                       => Định vị trí item sang bên phải (điểm kết thúc) của khối container
+
+                            justify-content: center                         => Định vị trí item nằm giữa của khối container
+
+                            justify-content: space-between                  => Định vị trí item cách đều nhau, sát lề
+
+                            justify-content: space-around                   => Định vị trí item sao cho khoảng trắng xung quanh của mỗi phần tử là bằng nhau
+                                                                                
+                                                                            Lưu ý: Khoảng trắng giữa 2 phần tử nhiều hơn khoảng trắng giữa phần tử và lề
+
+                            justify-content: space-evenly                   => Định vị trí item cách đều nhau và cách cả lề      
+        -->
+
+        <div class="container">
+            <div class="box box1">Block 1</div>
+            <div class="box box2">Block 2</div>
+            <div class="box box3">Block 3</div>
+            <div class="box box4">Block 4</div>
+            <div class="box box5">Block 5</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+.box {
+    width: 100px;
+    height: 150px;
+
+    padding: 5px;
+
+    border: 10px solid red;
+
+    /* Mặc định là content-box */
+    box-sizing: content-box;
+}
+
+.box2 {
+    width: 160px;
+    height: 210px;
+
+    padding: 5px;
+
+    /* Áp dụng cho kích thước mặc định ban đầu (Không thay đổi) */
+    box-sizing: border-box;
+}

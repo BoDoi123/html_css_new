@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Position - Z-Index</title>
+    </head>
+    <body>
+        <!--  
+            6. Thuộc tính Z-index 
+            
+                => Dùng để xác định xem phần tử nào nằm cao hơn phần tử nào (Phần tử thấp hơn có thể bị che khuất)
+
+                *) Lưu ý:
+
+                    - Z-index được sử dụng khi các phần tử có cùng kiểu vị trí (position) được định nghĩa là relative, absolute hoặc fixed
+
+                    - Các phần tử static không bị ảnh hưởng bới z-index
+
+                    - Ở trạng thái mặc định, chưa set z-index thì phần tử nào viết sau sẽ nằm trên
+
+                *) Giá trị của thuộc tính z-index:
+
+                    => Khối nào chứa z-index lớn hơn thì năm trên cùng 
+
+                        VD: .box {
+                                position: absolute; 
+                            }
+
+                            .box1 {
+                                z-index: 1;
+                            }
+
+                            .box2 {
+                                z-index: 2;
+                            }
+
+                            => Box 2 chứa z-index lớn nhất nên được ưu tiên đặt trước, xong đến box 1
+        -->
+
+        <div class="content">
+            <div class="box box1">Khối 1</div>
+            <div class="box box2">Khối 2</div>
+            <div class="box box3">Khối 3</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>CSS Position - PositionAbsolute</title>
+    </head>
+    <body>
+        <!--  
+            3. Position: Absolute 
+
+                => Phần tử thực sự được đưa ra khỏi luồng ban đầu
+
+                *) Các TH của thuộc tính:
+
+                    TH1: Nếu không có tổ tiên có chứa thuộc tính position: relative 
+
+                        => Phần tử được định vị theo top left corner webpage (Lấy gốc là ở cạnh trên cùng bên trái của trang web)
+
+                            VD: .box2 {
+                                    background: blue;
+
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }    
+
+                                => Khối 2 sẽ được đặt ở góc trên cùng bên trái trang web
+                                
+                                => Khối 3 sẽ đươc đẩy lên trên (do khối 2 đã bị di chuyển lên mặt phẳng phía trên mặt phẳng thông thường)
+
+                                => Khối 2 sẽ nằm trên 1 layer ở phía trên (mặt phẳng phía trên luồng thông thường)
+
+                    TH2: Phần tử được định vị theo tổ tiên gần nhất đặt position là relative
+
+                        => Phần tử được định vị theo thẻ tổ tiên có chứa thuộc tính position: relative
+
+                                => Gốc đặt ở góc trên cùng bên trái của thẻ tổ tiên đó
+        -->
+
+        <div class="header">
+            <div class="content">
+                <div class="box box1">Khối 1</div>
+                <div class="box box2">Khối 2</div>
+                <div class="box box3">Khối 3</div>
+
+                <h1>Tuhoc.cc</h1>
+            </div>
+        </div>
+    </body>
+</html>

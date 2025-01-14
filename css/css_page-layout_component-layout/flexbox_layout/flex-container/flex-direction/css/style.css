@@ -1,0 +1,33 @@
+.box {
+    background-color: blue;
+
+    border: 1px solid black;
+}
+
+.container {
+    height: 200px;
+
+    display: flex;
+
+    background-color: cyan;
+
+    /* Default value */
+    flex-direction: row;
+
+    /* Đảo ngược trục main axis (trục ngang) từ trái qua phải */
+    /* Lưu ý trục cross axis không đổi */
+    /* flex-direction: row-reverse; */
+
+    /* Dồn item về phía main end */
+    /* justify-content: flex-end; */
+
+    /* Xoay 2 trục main và cross axis */
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    align-items: flex-start;
+
+    /* Xoay hướng của trục main */
+    flex-direction: column-reverse;
+}

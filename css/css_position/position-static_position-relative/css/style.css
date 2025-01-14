@@ -1,0 +1,50 @@
+.box {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 10px;
+
+    color: #fff;
+
+    /* Căn giữa text ở các khối dùng flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    background-color: red;
+
+    /* Giá trị mặc định của các thẻ */
+    position: static;
+}
+
+.box2 {
+    background-color: blue;
+
+    /* Giá trị position: relative cùng với giá trị x */
+    position: relative;
+
+    /* Khối 2 sẽ cách lề trái ban đầu 50px */
+    left: 50px;
+
+    /* Khối 2 sẽ cách lề phải ban đầu 50px */
+    /* right: 50px; */
+
+    /* Khối 2 sẽ cách lề trên ban đầu 50px */
+    /* top: 50px; */
+
+    /* Khối 2 sẽ cách lề dưới ban đầu 50px */
+    bottom: 50px;
+}
+
+.box3 {
+    background-color: green;
+
+    position: relative;
+    bottom: 50px;
+}
+
+h1 {
+    background-color: purple;
+}
